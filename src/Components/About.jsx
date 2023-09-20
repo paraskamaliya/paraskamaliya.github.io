@@ -1,12 +1,11 @@
 import { EmailIcon } from "@chakra-ui/icons";
-import { Box, Card, CardHeader, CardBody, Divider, Text, Icon, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Card, CardHeader, CardBody, Divider, Text, Icon, Grid, GridItem, Heading } from "@chakra-ui/react";
 import { TiLocation } from "react-icons/ti"
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 const About = () => {
-    return <Box w={"90%"} m={"auto"} border={"1px solid white"} padding={"1rem"}>
+    return <Box w={"90%"} m={"auto"} padding={"1rem"}>
         <Card m={"auto"}>
-            <CardHeader textAlign={"center"} bgColor={"black"} color={"white"} fontSize={"2rem"}>About Me</CardHeader>
-            <Divider color={"whiteAlpha.900"} />
+            <Heading bg={"black"} color={"white"} textAlign={"center"} textDecoration={"underline"} textDecorationColor={"white"}>About Me</Heading>
             <CardBody bgColor={"black"}>
                 <Text color={"white"} fontSize={"1.5rem"} w={"80%"} m={"auto"}>Hello, I'm <span style={{ color: "yellow" }}>Paras Kamaliya</span>, an aspiring <span style={{ color: "yellow" }}>Full Stack Web Developer</span> with a deep curiosity for exploring industry-standard tech stacks. Proficient in the <span style={{ color: "yellow" }}>MERN stack</span>, I'm eager to kickstart my career with an organization that offers opportunities for skill enhancement and personal growth, aligning with the organization's objectives.</Text>
                 <br />
@@ -30,6 +29,7 @@ const About = () => {
                 </Grid>
             </CardBody>
         </Card>
+        <Divider />
     </Box>
 }
 export default About;

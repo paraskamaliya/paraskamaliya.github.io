@@ -3,7 +3,7 @@ import PK from "../assets/pk.png"
 import { Link } from "react-scroll";
 import { ExternalLinkIcon } from "@chakra-ui/icons"
 const Navbar = () => {
-    return <Box display={"flex"} w={"90%"} border={"1px solid white"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} id="nav-menu">
+    return <Box display={"flex"} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} id="nav-menu">
         <Image src={PK} alt="LOGO" objectFit={"cover"} boxSize={"150px"} />
         <Spacer />
         <HStack>

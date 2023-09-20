@@ -1,7 +1,7 @@
-import { Box, Heading, Image, Stack, Text } from "@chakra-ui/react"
+import { Box, Divider, Heading, Image, Stack, Text } from "@chakra-ui/react"
 import ProfilePic from "../Photos/profilepic.png"
 const Intro = () => {
-    return <Box color={"white"} m={"auto"} w={"90%"} border={"1px solid white"} >
+    return <Box color={"white"} m={"auto"} w={"90%"} >
         <Stack display={"flex"} m={"auto"} justifyContent={"center"} flexDirection={["column", "column", "row", "row", "row"]} alignItems={"center"} w={"100%"}>
             <Box textAlign={"left"} padding={"1rem"} fontSize={"2rem"} m={"auto"} >
                 <Text textAlign={"left"} fontWeight={200} fontSize={"2rem"}>Hello👋, </Text>
@@ -13,6 +13,7 @@ const Intro = () => {
                 <Image src={ProfilePic} m={"auto"} objectFit={"cover"} />
             </Box>
         </Stack>
+        <Divider />
     </Box >
 }
 export default Intro;
