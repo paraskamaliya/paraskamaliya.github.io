@@ -7,11 +7,11 @@ const Navbar = () => {
         <Image src={PK} alt="LOGO" objectFit={"cover"} boxSize={"150px"} />
         <Spacer />
         <HStack>
-            <Link>Home</Link>
-            <Link>About</Link>
-            <Link>Skills</Link>
-            <Link>Projects</Link>
-            <Link>Contact</Link>
+            <Link className="nav-link home">Home</Link>
+            <Link className="nav-link about">About</Link>
+            <Link className="nav-link skills">Skills</Link>
+            <Link className="nav-link projects">Projects</Link>
+            <Link className="nav-link contacts">Contact</Link>
         </HStack>
         <Spacer />
         <Button rightIcon={<ExternalLinkIcon />}>Resume</Button>
