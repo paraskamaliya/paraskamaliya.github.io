@@ -21,7 +21,7 @@ import jest from "../assets/jest.png"
 import netlify from "../assets/netlify.png"
 import vercel from "../assets/Vercel.png"
 const Skills = () => {
-    return <Box color={"white"} w={"90%"} m={"auto"} pt={"1rem"}>
+    return <Box color={"white"} w={"90%"} m={"auto"} pt={"1rem"} id="skills">
         <Heading textAlign={"center"} textDecoration={"underline"} color={"yellow"} textDecorationColor={"yellow"}>Skills</Heading>
         <Box w={"100%"} direction={"row"} justifyContent={"center"} >
             <Heading textAlign={"center"} fontSize={"3xl"} mt={5} >Tech Stacks</Heading>

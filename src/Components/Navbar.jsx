@@ -7,10 +7,10 @@ const Navbar = () => {
         <Image src={PK} alt="LOGO" objectFit={"cover"} boxSize={"150px"} />
         <Spacer />
         <HStack>
-            <Link className="nav-link home">Home</Link>
-            <Link className="nav-link about">About</Link>
-            <Link className="nav-link skills">Skills</Link>
-            <Link className="nav-link projects">Projects</Link>
+            <Link activeClass="active" to="intro" spy={true} smooth={true} offset={0} duration={500} className="nav-link home">Home</Link>
+            <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} className="nav-link about">About</Link>
+            <Link activeClass="active" to="skills" spy={true} smooth={true} offset={0} duration={500} className="nav-link skills">Skills</Link>
+            <Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500} className="nav-link projects">Projects</Link>
             <Link className="nav-link contacts">Contact</Link>
         </HStack>
         <Spacer />

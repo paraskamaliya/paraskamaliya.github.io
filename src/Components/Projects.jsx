@@ -16,7 +16,7 @@ const Projects = () => {
         let val = e_plantCurr == e_plant.length - 1 ? 0 : e_plantCurr + 1
         setE_plantCurr(val);
     };
-    return <Box color={"white"} w={"90%"} m={"auto"} pt={"1rem"}>
+    return <Box color={"white"} w={"90%"} m={"auto"} pt={"1rem"} id="projects">
         <Heading textAlign={"center"}>Projects</Heading>
         <Stack display={"flex"} flexDirection={"row"} gap={"20px"} padding={"10px"}>
             <Box w={"50%"}>
