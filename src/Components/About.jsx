@@ -3,7 +3,7 @@ import { Box, Card, CardHeader, CardBody, Divider, Text, Icon, Grid, GridItem, H
 import { TiLocation } from "react-icons/ti"
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 const About = () => {
-    return <Box w={"90%"} m={"auto"} padding={"1rem"} id="about">
+    return <Box w={"90%"} m={"auto"} padding={"1rem"} id="about" className="about section">
         <Card m={"auto"}>
             <Heading bg={"black"} color={"yellow"} textAlign={"center"} textDecoration={"underline"} textDecorationColor={"yellow"}>About Me</Heading>
             <CardBody bgColor={"black"}>
