@@ -14,7 +14,10 @@ const Navbar = () => {
             <Link className="nav-link contact">Contact</Link>
         </HStack>
         <Spacer />
-        <Button rightIcon={<ExternalLinkIcon />}>Resume</Button>
+        <HStack>
+            <Button rightIcon={<ExternalLinkIcon />}>Resume</Button>
+            {/* <Image src={}/> */}
+        </HStack>
     </Box>
 }
 export default Navbar;
