@@ -1,5 +1,5 @@
 import { Box, Heading, Stack, HStack, Image, Text, Link, Button } from "@chakra-ui/react"
-import EPlant from "../Project Com/EPlant";
+import EPlant from "../Project Component/EPlant";
 
 
 
