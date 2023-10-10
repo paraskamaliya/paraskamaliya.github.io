@@ -27,7 +27,7 @@ const About = () => {
                         </GridItem>
                         <GridItem fontSize={"1.2rem"} m="auto" textAlign={"center"} >
                             <Icon as={AiFillLinkedin} fontSize={"1.2rem"} />{" "}
-                            <a href="https://www.linkedin.com/in/paras-kamaliya-83a761192/" target="_blank">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/paras-kamaliya/" target="_blank">LinkedIn</a>
                         </GridItem>
                     </Grid>
                 </CardBody>
