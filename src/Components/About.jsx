@@ -8,9 +8,9 @@ const About = () => {
     return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"}>
         <Box w={"90%"} m={"auto"} padding={"1rem"} id="about" className="about section">
             <Card m={"auto"} bg={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
-                <Heading color={"yellow"} textAlign={"center"} textDecoration={"underline"} textDecorationColor={"yellow"}>About Me</Heading>
+                <Heading color={"#dfdf18"} textAlign={"center"} textDecoration={"underline"} textDecorationColor={"#dfdf18"}>About Me</Heading>
                 <CardBody >
-                    <Text fontSize={"1.5rem"} w={"80%"} m={"auto"}>Hello, I'm <span style={{ color: "yellow" }}>Paras Kamaliya</span>, an aspiring <span style={{ color: "yellow" }}>Full Stack Web Developer</span> with a deep curiosity for exploring industry-standard tech stacks. Proficient in the <span style={{ color: "yellow" }}>MERN stack</span>, I'm eager to kickstart my career with an organization that offers opportunities for skill enhancement and personal growth, aligning with the organization's objectives.</Text>
+                    <Text fontSize={"1.5rem"} w={"80%"} m={"auto"}>Hello, I'm <span style={{ color: "#dfdf18" }}>Paras Kamaliya</span>, an aspiring <span style={{ color: "#dfdf18" }}>Full Stack Web Developer</span> with a deep curiosity for exploring industry-standard tech stacks. Proficient in the <span style={{ color: "#dfdf18" }}>MERN stack</span>, I'm eager to kickstart my career with an organization that offers opportunities for skill enhancement and personal growth, aligning with the organization's objectives.</Text>
                     <br />
                     <Grid w={"80%"} m={"auto"} display={"grid"} templateColumns={["repeat(1,1fr)", "repeat(1,1fr)", "repeat(2,1fr)", "repeat(4,1fr)", "repeat(4,1fr)"]} templateRows={["repeat(4,1fr)", "repeat(4,1fr)", "repeat(2,1fr)", "repeat(1,1fr)", "repeat(1,1fr)"]}  >
                         <GridItem fontSize={"1.2rem"} m="auto" textAlign={"center"} >
