@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/static/js/main.b806ca2b.js",
-    "static/media/Product Page.png": "/static/media/Product Page.1a356f4d7b5910ef05a5.png",
+    "main.css": "/static/css/main.dcd1ea69.css",
+    "main.js": "/static/js/main.250dcbf5.js",
     "static/media/Home Page.png": "/static/media/Home Page.bd58fd95e81a4f69fdac.png",
-    "static/media/Single Product Page.png": "/static/media/Single Product Page.570ecde17cb303ad54d0.png",
     "static/media/profilepic.png": "/static/media/profilepic.9a97d991dcb5c68f2d71.png",
-    "static/media/Cart Page.png": "/static/media/Cart Page.787e83f8417b2aac78ca.png",
-    "static/media/Payment Page.png": "/static/media/Payment Page.20101348b4f23a08f883.png",
+    "static/media/Dashboard Page.png": "/static/media/Dashboard Page.376f637e22b740797ba1.png",
     "static/media/Vercel.png": "/static/media/Vercel.fd61b9b83d69243486a9.png",
-    "static/media/pk.png": "/static/media/pk.a298a3328df63e7496ec.png",
     "static/media/cypress.png": "/static/media/cypress.3ec6291e292175954557.png",
-    "static/media/Login Page.png": "/static/media/Login Page.90a643504eb46068be69.png",
+    "static/media/3.png": "/static/media/3.4df7874c4d8bbe5da62b.png",
+    "static/media/2.png": "/static/media/2.c1b9171c8a0e6f35d20e.png",
     "index.html": "/index.html",
-    "main.b806ca2b.js.map": "/static/js/main.b806ca2b.js.map"
+    "main.dcd1ea69.css.map": "/static/css/main.dcd1ea69.css.map",
+    "main.250dcbf5.js.map": "/static/js/main.250dcbf5.js.map"
   },
   "entrypoints": [
-    "static/js/main.b806ca2b.js"
+    "static/css/main.dcd1ea69.css",
+    "static/js/main.250dcbf5.js"
   ]
 }
