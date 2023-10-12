@@ -6,8 +6,8 @@ import { useSelector } from "react-redux";
 import { Button } from "react-scroll";
 const About = () => {
     const theme = useSelector(store => store.theme);
-    return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} className="about section">
-        <Box w={"90%"} m={"auto"} padding={"1rem"} id="about" >
+    return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} id="about" className="about section" >
+        <Box w={"90%"} m={"auto"} padding={"1rem"}  >
             <Card m={"auto"} bg={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
                 <Heading color={"#dfdf18"} textAlign={"center"} textDecoration={"underline"} textDecorationColor={"#dfdf18"}>About Me</Heading>
                 <CardBody >
