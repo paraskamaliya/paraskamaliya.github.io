@@ -1,6 +1,6 @@
 import { Box, Image, HStack, Button, Spacer, Divider, IconButton, Tooltip } from "@chakra-ui/react";
-import blackImg from "../3.png"
-import whiteImg from "../2.png"
+import blackImg from "../Photos/3.webp"
+import whiteImg from "../Photos/2.webp"
 import { Link } from "react-scroll";
 import { ExternalLinkIcon } from "@chakra-ui/icons"
 import { useDispatch, useSelector } from "react-redux";
@@ -10,7 +10,7 @@ const Navbar = () => {
     const theme = useSelector(store => store.theme)
     const dispatch = useDispatch();
     return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} id="nav-menu">
-        <Box display={"flex"} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
+        <Box display={"flex"} flexDirection={["column", "column", "row"]} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
             <Image src={theme == "dark" ? blackImg : whiteImg} alt="LOGO" objectFit={"cover"} boxSize={"100px"} id="home" m={"10px"} />
             <Spacer />
             <HStack>
