@@ -1,6 +1,6 @@
 import homePage from "../Project Photo/E-Plant/Home Page.png"
 import { BsGithub } from "react-icons/bs";
-import { Box, Button, Heading, Image, Link, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, HStack, Heading, Image, Link, Stack, Text } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons"
 import { useSelector } from "react-redux";
 
@@ -13,12 +13,13 @@ const EPlant = () => {
         <Box w={["80%", "80%", "50%", "50%", "50%"]}>
             <Heading fontSize={"5xl"} className="project-title">E-Plant</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description">E-Plant is an innovative e-commerce platform dedicated to the beauty of nature, offering a wide variety of plants. With both user and admin interfaces, it seamlessly blends functionality with an appealing UI. Explore the world of greenery while keeping track of your recent visits to your favorite plants.</Text>
-            <Button disabled colorScheme="red" color={"black"} mr={"15px"} className="project-tech-stack">HTML</Button>
-            <Button disabled colorScheme="blue" color={"black"} mr={"15px"}>CSS</Button>
-            <Button disabled colorScheme="yellow" color={"black"} mr={"15px"}>JS</Button>
-            <Button disabled bg="#65B0BA" mr={"15px"}>React.Js</Button>
-            <Button disabled bg={"#4DB6AC"} >Chakra UI</Button>
-            <br />
+            <HStack className="project-tech-stack" gap={"15px"}>
+                <Button disabled colorScheme="red" color={"black"} className="project-tech-stack">HTML</Button>
+                <Button disabled colorScheme="blue" color={"black"} >CSS</Button>
+                <Button disabled colorScheme="yellow" color={"black"} >JS</Button>
+                <Button disabled bg="#65B0BA" >React.Js</Button>
+                <Button disabled bg={"#4DB6AC"} >Chakra UI</Button>
+            </HStack>
             <Link href='https://github.com/paraskamaliya/phobic-lumber-7659' isExternal className="project-github-link">
                 <Button mt={"15px"} mr={"15px"} leftIcon={<BsGithub />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} border={"1px solid black"}>Github</Button>
             </Link>

@@ -23,8 +23,8 @@ import vercel from "../assets/Vercel.png"
 import { useSelector } from "react-redux";
 const Skills = () => {
     const theme = useSelector(store => store.theme);
-    return <Box w={"100%"} backgroundColor={theme === "dark" ? "black" : "white"} color={theme === "dark" ? "white" : "black"}>
-        <Box w={"90%"} m={"auto"} pt={"1rem"} id="skills">
+    return <Box w={"100%"} backgroundColor={theme === "dark" ? "black" : "white"} color={theme === "dark" ? "white" : "black"} id="skills">
+        <Box w={"90%"} m={"auto"} pt={"1rem"} >
             <Heading textAlign={"center"} textDecoration={"underline"} color={"yellow"} textDecorationColor={"yellow"}>Skills</Heading>
             <Box w={"100%"} direction={"row"} justifyContent={"center"} >
                 <Heading textAlign={"center"} fontSize={"3xl"} mt={5} >Tech Stacks</Heading>
@@ -109,23 +109,23 @@ const Skills = () => {
                         <Heading fontSize={"3xl"} fontWeight={400} mt={"7px"} mb={"5px"}>Toolsets</Heading>
                         <Box w={"100%"}>
                             <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} m={"auto"} textAlign={"center"} w={"100%"} >
-                                <GridItem className = "skills-card-name">
+                                <GridItem className="skills-card-name">
                                     <Image src={github} h={"75px"} w={"75px"} objectFit={"cover"} m={"auto"} alt="githhub" className="skills-card-img" />
                                     GitHub
                                 </GridItem>
-                                <GridItem className = "skills-card-name">
+                                <GridItem className="skills-card-name">
                                     <Image src={netlify} h={"75px"} w={"75px"} objectFit={"cover"} m={"auto"} alt="netlify" className="skills-card-img" />
                                     Netlify
                                 </GridItem>
-                                <GridItem justifyContent={"center"} className = "skills-card-name">
+                                <GridItem justifyContent={"center"} className="skills-card-name">
                                     <Image src={vercel} h={"75px"} w={"105px"} objectFit={"cover"} m={"auto"} bg={"white"} alt="vercel" className="skills-card-img" />
                                     Vercel
                                 </GridItem>
-                                <GridItem className = "skills-card-name">
+                                <GridItem className="skills-card-name">
                                     <Image src={jest} h={"75px"} w={"75px"} objectFit={"cover"} m={"auto"} alt="jest" className="skills-card-img" />
                                     Jest Testing
                                 </GridItem>
-                                <GridItem className = "skills-card-name">
+                                <GridItem className="skills-card-name">
                                     <Image src={cypress} h={"75px"} w={"100px"} m={"auto"} bg={"white"} alt="cypress" className="skills-card-img" />
                                     Cypress Testing
                                 </GridItem>

@@ -1,12 +1,13 @@
-import { EmailIcon } from "@chakra-ui/icons";
-import { Box, Card, CardHeader, CardBody, Divider, Text, Icon, Grid, GridItem, Heading } from "@chakra-ui/react";
+import { EmailIcon, ExternalLinkIcon } from "@chakra-ui/icons";
+import { Box, Card, CardHeader, CardBody, Divider, Text, Icon, Grid, GridItem, Heading, Link } from "@chakra-ui/react";
 import { TiLocation } from "react-icons/ti"
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { useSelector } from "react-redux";
+import { Button } from "react-scroll";
 const About = () => {
     const theme = useSelector(store => store.theme);
-    return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"}>
-        <Box w={"90%"} m={"auto"} padding={"1rem"} id="about" className="about section">
+    return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} className="about section">
+        <Box w={"90%"} m={"auto"} padding={"1rem"} id="about" >
             <Card m={"auto"} bg={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
                 <Heading color={"#dfdf18"} textAlign={"center"} textDecoration={"underline"} textDecorationColor={"#dfdf18"}>About Me</Heading>
                 <CardBody >

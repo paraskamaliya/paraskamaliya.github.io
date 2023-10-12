@@ -9,8 +9,8 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons"
 const Navbar = () => {
     const theme = useSelector(store => store.theme)
     const dispatch = useDispatch();
-    return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"}>
-        <Box display={"flex"} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} id="nav-menu" borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
+    return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} id="nav-menu">
+        <Box display={"flex"} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
             <Image src={theme == "dark" ? blackImg : whiteImg} alt="LOGO" objectFit={"cover"} boxSize={"100px"} id="home" m={"10px"} />
             <Spacer />
             <HStack>
@@ -27,7 +27,7 @@ const Navbar = () => {
             <Spacer />
             <HStack>
                 <IconButton icon={theme == "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme == "dark" ? "white" : "black"} _hover={{ color: "none" }} />
-                <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }}>Resume</Button>
+                <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume">Resume</Button>
             </HStack>
         </Box>
     </Box >

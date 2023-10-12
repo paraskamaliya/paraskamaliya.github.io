@@ -8,8 +8,8 @@ import { useSelector } from "react-redux";
 
 const Projects = () => {
     const theme = useSelector(store => store.theme);
-    return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"}>
-        <Box w={"90%"} m={"auto"} pt={"1rem"} id="projects">
+    return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} id="projects">
+        <Box w={"90%"} m={"auto"} pt={"1rem"} >
             <Heading textAlign={"center"}>Projects</Heading>
             <EPlant />
             <Connect />
