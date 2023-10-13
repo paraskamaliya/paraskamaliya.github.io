@@ -25,12 +25,12 @@ const Skills = () => {
     const theme = useSelector(store => store.theme);
     return <Box w={"100%"} backgroundColor={theme === "dark" ? "black" : "white"} color={theme === "dark" ? "white" : "black"} id="skills">
         <Box w={"90%"} m={"auto"} pt={"1rem"} >
-            <Heading textAlign={"center"} textDecoration={"underline"} color={"yellow"} textDecorationColor={"yellow"}>Skills</Heading>
+            <Heading textAlign={"center"} textDecoration={"underline"} color={"#00a2ff"} textDecorationColor={"#00a2ff"}>Skills</Heading>
             <Box w={"100%"} direction={"row"} justifyContent={"center"} >
                 <Heading textAlign={"center"} fontSize={"3xl"} mt={5} >Tech Stacks</Heading>
 
                 <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(5,1fr)"]} fontSize={"2xl"} textAlign={"center"} gap={"7"} border={theme === "dark" ? "1px solid white" : "1px solid black"} borderRadius={10}>
-                    <GridItem justifyContent={"center"} justifyItems={"center"} className="skills-card-name">
+                    <GridItem justifyContent={"center"} justifyItems={"center"} className="skills-card-name" >
                         <Image src={html} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="html" className="skills-card-img" />
                         HTML
                     </GridItem>

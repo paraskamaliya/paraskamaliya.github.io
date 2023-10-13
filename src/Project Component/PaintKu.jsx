@@ -24,8 +24,11 @@ const PaintKu = () => {
             <Link href='https://github.com/paraskamaliya/loud-weight-1875' isExternal className="project-github-link">
                 <Button mt={"15px"} mr={"15px"} leftIcon={<BsGithub />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} border={"1px solid black"}>Github</Button>
             </Link>
-            <Link href='https://paintku.vercel.app/' isExternal className="project-deployed-link">
-                <Button mt={"15px"} backgroundColor="#48BB78" color={"black"} _hover={{ colorScheme: "#48BB78" }} rightIcon={<ExternalLinkIcon />} border={"1px solid black"}>Live Demo</Button>
+            <Link isExternal className="project-deployed-link">
+                <Button mt={"15px"} backgroundColor="#48BB78" color={"white"} _hover={{ colorScheme: "#48BB78" }} rightIcon={<ExternalLinkIcon />} border={"1px solid black"} _active={{
+                    bg: '#48BB78', transform: 'scale(0.95)', borderColor: '#000000'
+                }}
+                >Live Demo</Button>
             </Link>
         </Box>
     </Stack >
