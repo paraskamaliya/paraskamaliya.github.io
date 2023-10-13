@@ -26,7 +26,7 @@ const PaintKu = () => {
             </Link>
             <Link isExternal className="project-deployed-link">
                 <Button mt={"15px"} backgroundColor="#48BB78" color={"white"} _hover={{ colorScheme: "#48BB78" }} rightIcon={<ExternalLinkIcon />} border={"1px solid black"} _active={{
-                    bg: '#48BB78', transform: 'scale(0.95)', borderColor: '#000000'
+                    bg: '#48BB78', transform: 'scale(0.90)', borderColor: '#000000'
                 }}
                 >Live Demo</Button>
             </Link>
