@@ -1,11 +1,10 @@
 import { Box, Button, Divider, Heading, Image, Link, Stack, Text } from "@chakra-ui/react"
 import ProfilePic from "../Photos/profilepic.png"
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 const Intro = () => {
     const theme = useSelector(store => store.theme)
-    const dispatch = useDispatch();
-    return <Box bg={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} w={"100%"} id="intro">
+    return <Box bg={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} w={"100%"} id="intro" >
         <Box m={"auto"} w={"90%"} >
             <Stack display={"flex"} m={"auto"} justifyContent={"center"} flexDirection={["column", "column", "row", "row", "row"]} alignItems={"center"} w={"100%"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
                 <Box textAlign={"left"} padding={"1rem"} fontSize={"2rem"} m={"auto"} >

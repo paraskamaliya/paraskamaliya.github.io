@@ -12,19 +12,23 @@ const Connect = () => {
         </Box>
         <Box w={["80%", "80%", "50%", "50%", "50%"]}>
             <Heading fontSize={"5xl"} className="project-title">Connect</Heading>
-            <Text mt={"15px"} mb={"15px"} className="project-description">Step into the future of efficient management with 'Connect.' This dynamic website unites students, managers, and administrators, empowering them with tailored interfaces for seamless collaboration. Immerse yourself in a sleek, user-friendly environment with the added charm of a customizable dark mode. Engage in vibrant discussions and stay informed with the latest announcements. 'Connect' - where functionality meets elegance, making management an absolute pleasure.</Text>
-            <Grid templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(4,1fr)"]} gap={"10px"} className="project-tech-stack" >
+            <Text mt={"15px"} mb={"15px"} className="project-description" >Step into the future of efficient management with 'Connect.' This dynamic website unites students, managers, and administrators, empowering them with tailored interfaces for seamless collaboration. Immerse yourself in a sleek, user-friendly environment with the added charm of a customizable dark mode. Engage in vibrant discussions and stay informed with the latest announcements. 'Connect' - where functionality meets elegance, making management an absolute pleasure.</Text>
+            <Grid templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(4,1fr)"]} templateRows={"auto"} gap={"10px"} className="project-tech-stack" >
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="red" color={"black"} w={"100%"}>HTML</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="blue" color={"black"} w={"100%"} >CSS</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="yellow" color={"black"} w={"100%"} >JavaScript</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="cyan" color={"black"} w={"100%"}>SmtpJs</Button></GridItem>
             </Grid>
-            <Stack direction={["column", "row", "row"]}>
+            <Stack direction={["column", "row", "row"]} justifyContent={["center", "center", "left", "left", "left"]}>
                 <Link href='https://github.com/paraskamaliya/adorable-crown-8253' isExternal className="project-github-link">
-                    <Button mt={"15px"} mr={"15px"} leftIcon={<BsGithub />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} border={"1px solid black"}>Github</Button>
+                    <Button mt={"15px"} mr={"15px"} leftIcon={<BsGithub />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} border={"1px solid black"} _hover={{ colorScheme: theme === "dark" ? "white" : "black" }} _active={{
+                        bg: theme === "dark" ? "white" : "black", transform: 'scale(0.90)', borderColor: '#000000'
+                    }}>Github</Button>
                 </Link>
                 <Link href='https://connect-lms01.netlify.app/' isExternal className="project-deployed-link">
-                    <Button mt={"15px"} backgroundColor="#F6FFEE" color={"black"} rightIcon={<ExternalLinkIcon />} border={"1px solid black"}>Live Demo</Button>
+                    <Button mt={"15px"} backgroundColor="#F6FFEE" color={"black"} _hover={{ colorScheme: "#F6FFEE" }} rightIcon={<ExternalLinkIcon />} border={"1px solid black"} _active={{
+                        bg: '#F6FFEE', transform: 'scale(0.90)', borderColor: '#000000'
+                    }}>Live Demo</Button>
                 </Link>
             </Stack>
         </Box>

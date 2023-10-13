@@ -62,7 +62,7 @@ const Skills = () => {
                         <Image src={express} bg={"white"} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="express" className="skills-card-img" />
                         Express
                     </GridItem>
-                    <GridItem className="skills-card-name">
+                    <GridItem className="skills-card-name" w={"100%"}>
                         <Image src={mongo} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="mongodb" className="skills-card-img" />
                         MongoDB
                     </GridItem>
@@ -78,28 +78,28 @@ const Skills = () => {
                     <Box m={"auto"} textAlign={"center"}>
                         <Heading fontSize={"3xl"} fontWeight={400} mt={"7px"} mb={"5px"}>Mindsets</Heading>
                         <Box w={"100%"}>
-                            <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(6,1fr)"]} m={"auto"} textAlign={"center"} w={"100%"} columnGap={"80px"}>
-                                <GridItem className="skills-card-name">
-                                    <Image src={teamwork} h="75px" w={"75px"} objectFit={"cover"} m={"auto"} alt="teamwork" className="skills-card-img" />
+                            <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(6,1fr)"]} m={"auto"} textAlign={"center"} w={"100%"} gap={"auto"}>
+                                <GridItem className="skills-card-name" w={"100%"}>
+                                    <Image src={teamwork} w={"40%"} objectFit={"cover"} m={"auto"} alt="teamwork" className="skills-card-img" />
                                     Team Work
                                 </GridItem>
-                                <GridItem className="skills-card-name">
-                                    <Image src={creative} h="75px" w={"75px"} objectFit={"cover"} m={"auto"} alt="creative" className="skills-card-img" />
+                                <GridItem className="skills-card-name" w={"100%"}>
+                                    <Image src={creative} w={"40%"} objectFit={"cover"} m={"auto"} alt="creative" className="skills-card-img" />
                                     Creative
                                 </GridItem>
-                                <GridItem className="skills-card-name">
-                                    <Image src={adaptabilty} className="skills-card-name" h={"75px"} w={"75px"} objectFit={"cover"} m={"auto"} alt="adaptablity" />
+                                <GridItem className="skills-card-name" w={"100%"}>
+                                    <Image src={adaptabilty}  className="skills-card-name" w={"40%"} objectFit={"cover"} m={"auto"} alt="adaptablity" />
                                     Adaptability
                                 </GridItem>
-                                <GridItem className="skills-card-name">
+                                <GridItem className="skills-card-name" w={"100%"}>
                                     <Image src={self} h={"75x"} w={"75px"} objectFit={"cover"} m={"auto"} alt="selflearn" className="skills-card-img" />
                                     Self Learn
                                 </GridItem>
-                                <GridItem className="skills-card-name">
+                                <GridItem className="skills-card-name" w={"100%"}>
                                     <Image src={growth} h={"75px"} w={"75px"} objectFit={"cover"} m={"auto"} alt="growth" className="skills-card-img" />
                                     Growth
                                 </GridItem>
-                                <GridItem className="skills-card-name">
+                                <GridItem className="skills-card-name" w={"100%"}>
                                     <Image src={ownership} h={"75px"} w={"75px"} objectFit={"cover"} m={"auto"} alt="ownership" className="skills-card-img" />
                                     Ownership
                                 </GridItem>

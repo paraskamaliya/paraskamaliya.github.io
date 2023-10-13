@@ -20,13 +20,19 @@ const EPlant = () => {
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg="#65B0BA" w={"100%"}>React.Js</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#4DB6AC"} w={"100%"}>Chakra UI</Button></GridItem>
             </Grid>
-            <Link href='https://github.com/paraskamaliya/phobic-lumber-7659' isExternal className="project-github-link">
-                <Button mt={"15px"} mr={"15px"} leftIcon={<BsGithub />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} border={"1px solid black"}>Github</Button>
-            </Link>
-            <Link href='https://e-plant.vercel.app/' isExternal className="project-deployed-link">
-                <Button mt={"15px"} backgroundColor="#426800" color={"white"} rightIcon={<ExternalLinkIcon />} border={"1px solid black"}>Live Demo</Button>
-            </Link>
-        </Box>
+            <Stack direction={["column", "row", "row"]} justifyContent={["center", "center", "left", "left", "left"]}>
+                <Link href='https://github.com/paraskamaliya/phobic-lumber-7659' isExternal className="project-github-link">
+                    <Button mt={"15px"} mr={"15px"} leftIcon={<BsGithub />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} border={"1px solid black"} _hover={{ colorScheme: theme === "dark" ? "white" : "black" }} _active={{
+                        bg: theme === "dark" ? "white" : "black", transform: 'scale(0.90)', borderColor: '#000000'
+                    }}>Github</Button>
+                </Link>
+                <Link href='https://e-plant.vercel.app/' isExternal className="project-deployed-link">
+                    <Button mt={"15px"} backgroundColor="#426800" color={"white"} _hover={{ colorScheme: "#426800" }} rightIcon={<ExternalLinkIcon />} border={"1px solid black"} _active={{
+                        bg: '#426800', transform: 'scale(0.90)', borderColor: '#000000'
+                    }}>Live Demo</Button>
+                </Link>
+            </Stack>
+        </Box >
     </Stack >
 }
 export default EPlant;
