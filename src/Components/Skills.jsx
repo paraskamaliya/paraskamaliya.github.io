@@ -23,8 +23,8 @@ import vercel from "../assets/Vercel.png"
 import { useSelector } from "react-redux";
 const Skills = () => {
     const theme = useSelector(store => store.theme);
-    return <Box w={"100%"} backgroundColor={theme === "dark" ? "black" : "white"} color={theme === "dark" ? "white" : "black"} id="skills">
-        <Box w={"90%"} m={"auto"} pt={"1rem"} >
+    return <Box w={"100%"} backgroundColor={theme === "dark" ? "black" : "white"} color={theme === "dark" ? "white" : "black"} id="skills" >
+        <Box w={"90%"} m={"auto"} p={"1rem"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
             <Heading textAlign={"center"} textDecoration={"underline"} color={"#00a2ff"} textDecorationColor={"#00a2ff"}>Skills</Heading>
             <Box w={"100%"} direction={"row"} justifyContent={"center"} >
                 <Heading textAlign={"center"} fontSize={"3xl"} mt={5} >Tech Stacks</Heading>
@@ -77,34 +77,32 @@ const Skills = () => {
 
                     <Box m={"auto"} textAlign={"center"}>
                         <Heading fontSize={"3xl"} fontWeight={400} mt={"7px"} mb={"5px"}>Mindsets</Heading>
-                        <Box w={"100%"}>
-                            <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(6,1fr)"]} m={"auto"} textAlign={"center"} w={"100%"} gap={"auto"}>
-                                <GridItem className="skills-card-name" w={"100%"}>
-                                    <Image src={teamwork} w={"40%"} objectFit={"cover"} m={"auto"} alt="teamwork" className="skills-card-img" />
-                                    Team Work
-                                </GridItem>
-                                <GridItem className="skills-card-name" w={"100%"}>
-                                    <Image src={creative} w={"40%"} objectFit={"cover"} m={"auto"} alt="creative" className="skills-card-img" />
-                                    Creative
-                                </GridItem>
-                                <GridItem className="skills-card-name" w={"100%"}>
-                                    <Image src={adaptabilty}  className="skills-card-name" w={"40%"} objectFit={"cover"} m={"auto"} alt="adaptablity" />
-                                    Adaptability
-                                </GridItem>
-                                <GridItem className="skills-card-name" w={"100%"}>
-                                    <Image src={self} h={"75x"} w={"75px"} objectFit={"cover"} m={"auto"} alt="selflearn" className="skills-card-img" />
-                                    Self Learn
-                                </GridItem>
-                                <GridItem className="skills-card-name" w={"100%"}>
-                                    <Image src={growth} h={"75px"} w={"75px"} objectFit={"cover"} m={"auto"} alt="growth" className="skills-card-img" />
-                                    Growth
-                                </GridItem>
-                                <GridItem className="skills-card-name" w={"100%"}>
-                                    <Image src={ownership} h={"75px"} w={"75px"} objectFit={"cover"} m={"auto"} alt="ownership" className="skills-card-img" />
-                                    Ownership
-                                </GridItem>
-                            </Grid>
-                        </Box>
+                        <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(6,1fr)"]} m={"auto"} templateRows={"auto"} textAlign={"center"} >
+                            <GridItem className="skills-card-name" w={"100%"} m={"auto"} >
+                                <Image src={teamwork} w={"40%"} objectFit={"cover"} m={"auto"} alt="teamwork" className="skills-card-img" />
+                                Team Work
+                            </GridItem>
+                            <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
+                                <Image src={creative} w={"40%"} objectFit={"cover"} m={"auto"} alt="creative" className="skills-card-img" />
+                                Creative
+                            </GridItem>
+                            <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
+                                <Image src={adaptabilty} className="skills-card-name" w={"40%"} objectFit={"cover"} m={"auto"} alt="adaptablity" />
+                                Adaptability
+                            </GridItem>
+                            <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
+                                <Image src={self} w={"40%"} objectFit={"cover"} m={"auto"} alt="selflearn" className="skills-card-img" />
+                                Self Learn
+                            </GridItem>
+                            <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
+                                <Image src={growth} w={"40%"} objectFit={"cover"} m={"auto"} alt="growth" className="skills-card-img" />
+                                Growth
+                            </GridItem>
+                            <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
+                                <Image src={ownership} w={"40%"} objectFit={"cover"} m={"auto"} alt="ownership" className="skills-card-img" />
+                                Ownership
+                            </GridItem>
+                        </Grid>
 
                         <Heading fontSize={"3xl"} fontWeight={400} mt={"7px"} mb={"5px"}>Toolsets</Heading>
                         <Box w={"100%"}>

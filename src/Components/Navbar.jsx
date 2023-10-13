@@ -18,9 +18,9 @@ const Navbar = () => {
 
                 <Link activeClass="active" to="about" spy={true} smooth={true} offset={-115} duration={500} className="nav-link about" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>About</Link>
 
-                <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-100} duration={500} className="nav-link skills" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>Skills</Link>
+                <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-120} duration={500} className="nav-link skills" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>Skills</Link>
 
-                <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={500} className="nav-link projects" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>Projects</Link>
+                <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="nav-link projects" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>Projects</Link>
 
                 <Link className="nav-link contact" to="contact" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>Contact</Link>
             </HStack>
