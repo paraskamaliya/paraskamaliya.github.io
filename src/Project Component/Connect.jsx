@@ -14,10 +14,10 @@ const Connect = () => {
             <Heading fontSize={"5xl"} className="project-title">Connect</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description">Step into the future of efficient management with 'Connect.' This dynamic website unites students, managers, and administrators, empowering them with tailored interfaces for seamless collaboration. Immerse yourself in a sleek, user-friendly environment with the added charm of a customizable dark mode. Engage in vibrant discussions and stay informed with the latest announcements. 'Connect' - where functionality meets elegance, making management an absolute pleasure.</Text>
             <Grid templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(4,1fr)"]} gap={"10px"} className="project-tech-stack" >
-                <GridItem><Button colorScheme="red" color={"black"} w={"100%"}>HTML</Button></GridItem>
-                <GridItem><Button colorScheme="blue" color={"black"} w={"100%"} >CSS</Button></GridItem>
-                <GridItem><Button colorScheme="yellow" color={"black"} w={"100%"} >JavaScript</Button></GridItem>
-                <GridItem><Button colorScheme="cyan" color={"black"} w={"100%"}>SmtpJs</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="red" color={"black"} w={"100%"}>HTML</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="blue" color={"black"} w={"100%"} >CSS</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="yellow" color={"black"} w={"100%"} >JavaScript</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="cyan" color={"black"} w={"100%"}>SmtpJs</Button></GridItem>
             </Grid>
             <Stack direction={["column", "row", "row"]}>
                 <Link href='https://github.com/paraskamaliya/adorable-crown-8253' isExternal className="project-github-link">

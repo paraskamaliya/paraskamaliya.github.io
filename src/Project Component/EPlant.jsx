@@ -14,11 +14,11 @@ const EPlant = () => {
             <Heading fontSize={"5xl"} className="project-title">E-Plant</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description">E-Plant is an innovative e-commerce platform dedicated to the beauty of nature, offering a wide variety of plants. With both user and admin interfaces, it seamlessly blends functionality with an appealing UI. Explore the world of greenery while keeping track of your recent visits to your favorite plants.</Text>
             <Grid className="project-tech-stack" templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} gap={"10px"}>
-                <GridItem> <Button disabled colorScheme="red" color={"black"} w={"100%"} className="project-tech-stack">HTML</Button></GridItem>
-                <GridItem><Button disabled colorScheme="blue" color={"black"} w={"100%"}>CSS</Button></GridItem>
-                <GridItem><Button disabled colorScheme="yellow" color={"black"} w={"100%"}>JavaScript</Button></GridItem>
-                <GridItem><Button disabled bg="#65B0BA" w={"100%"}>React.Js</Button></GridItem>
-                <GridItem><Button disabled bg={"#4DB6AC"} w={"100%"}>Chakra UI</Button></GridItem>
+                <GridItem> <Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="red" color={"black"} w={"100%"} className="project-tech-stack">HTML</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="blue" color={"black"} w={"100%"}>CSS</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="yellow" color={"black"} w={"100%"}>JavaScript</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg="#65B0BA" w={"100%"}>React.Js</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#4DB6AC"} w={"100%"}>Chakra UI</Button></GridItem>
             </Grid>
             <Link href='https://github.com/paraskamaliya/phobic-lumber-7659' isExternal className="project-github-link">
                 <Button mt={"15px"} mr={"15px"} leftIcon={<BsGithub />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} border={"1px solid black"}>Github</Button>
