@@ -1,19 +1,19 @@
-import { Box, Heading, Stack, HStack, Image, Text, Link, Button } from "@chakra-ui/react"
+import { Box, Heading } from "@chakra-ui/react"
 import EPlant from "../Project Component/EPlant";
 import Connect from "../Project Component/Connect";
 import PaintKu from "../Project Component/PaintKu";
 import { useSelector } from "react-redux";
-
-
+import TechSchool from "../Project Component/TechSchool";
 
 const Projects = () => {
     const theme = useSelector(store => store.theme);
-    return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} id="projects">
+    return <Box w={"100%"} backgroundColor={theme === "dark" ? "black" : "white"} color={theme === "dark" ? "white" : "black"} id="projects">
         <Box w={"90%"} m={"auto"} pt={"1rem"} >
             <Heading textAlign={"center"} color={"#00a2ff"} textDecoration={"underline"} textDecorationColor={"#00a2ff"}>Projects</Heading>
             <EPlant />
             <Connect />
             <PaintKu />
+            <TechSchool />
         </Box>
     </Box>
 }
