@@ -1,4 +1,4 @@
-import { Box, Image, HStack, Button, Spacer, Divider, IconButton, Tooltip } from "@chakra-ui/react";
+import { Box, Image, HStack, Button, Spacer, IconButton } from "@chakra-ui/react";
 import blackImg from "../Photos/3.webp"
 import whiteImg from "../Photos/2.webp"
 import { Link } from "react-scroll";
