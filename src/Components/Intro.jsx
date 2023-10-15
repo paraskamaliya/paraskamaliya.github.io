@@ -7,7 +7,7 @@ const Intro = () => {
     return <Box bg={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} w={"100%"} id="intro" >
         <Box m={"auto"} w={"90%"} >
             <Stack display={"flex"} m={"auto"} justifyContent={"center"} flexDirection={["column", "column", "row", "row", "row"]} alignItems={"center"} w={"100%"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
-                <Box textAlign={"left"} padding={"1rem"} fontSize={"2rem"} m={"auto"} >
+                <Box textAlign={"left"} padding={"1rem"} fontSize={"2rem"} m={"auto"} w={["100%", "85%", "70%", "50%", "50%"]}>
                     <Text textAlign={"left"} fontWeight={200} fontSize={"2rem"}>Hello👋, </Text>
                     <Heading textAlign={"left"} fontSize={"4rem"}>I'm <span style={{ color: "#00a2ff" }} id="user-detail-name">Paras</span></Heading>
                     <Heading textAlign={"left"} fontSize={"3.5rem"} >Full Stack Web Developer</Heading>
@@ -16,11 +16,11 @@ const Intro = () => {
                         <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1">Resume</Button>
                     </Link>
                 </Box>
-                <Box w={["80%", "70%", "70%", "50%", "50%"]} m={"auto"}>
-                    <Image src={ProfilePic} m={"auto"} objectFit={"cover"} className="home-img" alt="profilepic" />
+                <Box w={["100%", "85%", "70%", "50%", "50%"]} m={"auto"} position={"sticky"} h={"100%"} alignItems={"flex-end"}>
+                    <Image src={ProfilePic} m={"auto"} objectFit={"cover"} className="home-img" alt="profilepic" flex={1} />
                 </Box>
             </Stack>
-        </Box>
+        </Box >
     </Box >
 }
 export default Intro;

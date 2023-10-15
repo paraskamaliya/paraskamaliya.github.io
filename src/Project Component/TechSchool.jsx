@@ -7,12 +7,12 @@ import { useSelector } from "react-redux";
 const TechSchool = () => {
     const theme = useSelector(store => store.theme)
     return <Stack display={"flex"} flexDirection={["column", "column", "row", "row", "row"]} gap={"20px"} padding={"20px"} alignContent={"center"} alignItems={"center"} className="project-card">
-        <Box w={["80%", "80%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"}>
+        <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"}>
             <Image src={homePage} border={"1px solid black"} cursor={"pointer"} alt="techschool" />
         </Box>
         <Box w={["80%", "80%", "50%", "50%", "50%"]}>
             <Heading fontSize={"5xl"} className="project-title">Tech School</Heading>
-            <Text mt={"15px"} mb={"15px"} className="project-description" >Tech School is my inaugural web development project, a basic website designed to showcase my foundational skills in web development. As a beginner in the world of coding and web design, I embarked on this project with a clear objective: to create a simple yet informative website.</Text>
+            <Text mt={"15px"} mb={"15px"} className="project-description" >Tech School is my inaugural web development project, a basic website designed to showcase my foundational skills in web development. As a <span style={{ color: "#00a2ff" }}>beginner</span> in the world of coding and web design, I embarked on this project with a clear objective: to create a simple yet <span style={{ color: "#00a2ff" }}>informative website</span>.</Text>
             <Grid templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(3,1fr)"]} templateRows={"auto"} gap={"10px"} className="project-tech-stack" >
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="red" color={"black"} w={"100%"}>HTML</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="blue" color={"black"} w={"100%"} >CSS</Button></GridItem>

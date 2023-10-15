@@ -76,55 +76,55 @@ const Skills = () => {
                 <Stack w={"100%"} mt={5} border={theme === "dark" ? "1px solid white" : "1px solid black"} borderRadius={10} m={"auto"} fontSize={"2xl"}>
 
                     <Box m={"auto"} textAlign={"center"}>
-                        <Heading fontSize={"3xl"} fontWeight={400} mt={"7px"} mb={"5px"}>Mindsets</Heading>
-                        <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(6,1fr)"]} m={"auto"} templateRows={"auto"} textAlign={"center"} >
+                        <Heading fontSize={"3xl"} fontWeight={400} m={"auto"} mt={"7px"} mb={"5px"} w={"90%"} borderBottom={"1px"}>Mindsets</Heading>
+                        <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(6,1fr)"]} m={"auto"} templateRows={"auto"} textAlign={"center"} w={"100%"} mt={"5px"}>
                             <GridItem className="skills-card-name" w={"100%"} m={"auto"} >
-                                <Image src={teamwork} w={"40%"} objectFit={"cover"} m={"auto"} alt="teamwork" className="skills-card-img" />
+                                <Image src={teamwork} w={"50%"} objectFit={"cover"} m={"auto"} alt="teamwork" className="skills-card-img" />
                                 Team Work
                             </GridItem>
                             <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
-                                <Image src={creative} w={"40%"} objectFit={"cover"} m={"auto"} alt="creative" className="skills-card-img" />
+                                <Image src={creative} w={"50%"} objectFit={"cover"} m={"auto"} alt="creative" className="skills-card-img" />
                                 Creative
                             </GridItem>
                             <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
-                                <Image src={adaptabilty} className="skills-card-name" w={"40%"} objectFit={"cover"} m={"auto"} alt="adaptablity" />
+                                <Image src={adaptabilty} className="skills-card-name" w={"50%"} objectFit={"cover"} m={"auto"} alt="adaptablity" />
                                 Adaptability
                             </GridItem>
                             <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
-                                <Image src={self} w={"40%"} objectFit={"cover"} m={"auto"} alt="selflearn" className="skills-card-img" />
+                                <Image src={self} w={"50%"} objectFit={"cover"} m={"auto"} alt="selflearn" className="skills-card-img" />
                                 Self Learn
                             </GridItem>
                             <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
-                                <Image src={growth} w={"40%"} objectFit={"cover"} m={"auto"} alt="growth" className="skills-card-img" />
+                                <Image src={growth} w={"50%"} objectFit={"cover"} m={"auto"} alt="growth" className="skills-card-img" />
                                 Growth
                             </GridItem>
                             <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
-                                <Image src={ownership} w={"40%"} objectFit={"cover"} m={"auto"} alt="ownership" className="skills-card-img" />
+                                <Image src={ownership} w={"50%"} objectFit={"cover"} m={"auto"} alt="ownership" className="skills-card-img" />
                                 Ownership
                             </GridItem>
                         </Grid>
 
-                        <Heading fontSize={"3xl"} fontWeight={400} mt={"7px"} mb={"5px"}>Toolsets</Heading>
+                        <Heading fontSize={"3xl"} fontWeight={400} mt={"7px"} mb={"5px"} m={"auto"} borderBottom={"1px"}>Toolsets</Heading>
                         <Box w={"100%"}>
-                            <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} m={"auto"} textAlign={"center"} w={"100%"} >
+                            <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} m={"auto"} textAlign={"center"} w={"100%"} mt={"5px"} h={"100%"}>
                                 <GridItem className="skills-card-name">
-                                    <Image src={github} h={"75px"} w={"75px"} objectFit={"cover"} m={"auto"} alt="githhub" className="skills-card-img" />
+                                    <Image src={github} w={"50%"} objectFit={"cover"} m={"auto"} alt="githhub" className="skills-card-img" />
                                     GitHub
                                 </GridItem>
                                 <GridItem className="skills-card-name">
-                                    <Image src={netlify} h={"75px"} w={"75px"} objectFit={"cover"} m={"auto"} alt="netlify" className="skills-card-img" />
+                                    <Image src={netlify} w={"50%"} objectFit={"cover"} m={"auto"} alt="netlify" className="skills-card-img" />
                                     Netlify
                                 </GridItem>
                                 <GridItem justifyContent={"center"} className="skills-card-name">
-                                    <Image src={vercel} h={"75px"} w={"105px"} objectFit={"cover"} m={"auto"} bg={"white"} alt="vercel" className="skills-card-img" />
+                                    <Image src={vercel} w={"50%"} objectFit={"cover"} m={"auto"} bg={"white"} alt="vercel" className="skills-card-img" />
                                     Vercel
                                 </GridItem>
                                 <GridItem className="skills-card-name">
-                                    <Image src={jest} h={"75px"} w={"75px"} objectFit={"cover"} m={"auto"} alt="jest" className="skills-card-img" />
+                                    <Image src={jest} w={"50%"} objectFit={"cover"} m={"auto"} alt="jest" className="skills-card-img" />
                                     Jest Testing
                                 </GridItem>
                                 <GridItem className="skills-card-name">
-                                    <Image src={cypress} h={"75px"} w={"100px"} m={"auto"} bg={"white"} alt="cypress" className="skills-card-img" />
+                                    <Image src={cypress} w={"50%"} m={"auto"} bg={"white"} alt="cypress" className="skills-card-img" />
                                     Cypress Testing
                                 </GridItem>
                             </Grid>
