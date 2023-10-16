@@ -10,7 +10,7 @@ const EPlant = () => {
         <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"}>
             <Image src={homePage} border={"1px solid black"} cursor={"pointer"} alt="eplant" />
         </Box>
-        <Box w={["80%", "80%", "50%", "50%", "50%"]}>
+        <Box w={["100%", "100%", "50%", "50%", "50%"]}>
             <Heading fontSize={"5xl"} className="project-title">E-Plant</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description">E-Plant is an innovative e-commerce platform dedicated to the beauty of nature, offering a wide variety of plants. With both <span style={{ color: "#4A90E2" }}>user and admin interfaces</span>, it seamlessly blends functionality with an <span style={{ color: "#4A90E2" }}>appealing UI</span>. Explore the world of greenery while keeping track of your <span style={{ color: "#4A90E2" }}>recent visits</span> to your favorite plants.</Text>
             <Grid className="project-tech-stack" templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} gap={"10px"}>
@@ -20,14 +20,14 @@ const EPlant = () => {
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg="#65B0BA" w={"100%"}>React.Js</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#4DB6AC"} w={"100%"}>Chakra UI</Button></GridItem>
             </Grid>
-            <Stack direction={["column", "row", "row"]} justifyContent={["center", "center", "left", "left", "left"]}>
+            <Stack direction={"row"} justifyContent={["center", "center", "left", "left", "left"]}>
                 <Link href='https://github.com/paraskamaliya/phobic-lumber-7659' isExternal className="project-github-link">
-                    <Button mt={"15px"} mr={"15px"} leftIcon={<BsGithub />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} border={"1px solid black"} _hover={{ colorScheme: theme === "dark" ? "white" : "black" }} _active={{
+                    <Button mt={"15px"} mr={"15px"} leftIcon={<BsGithub />} w={"100%"} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} border={"1px solid black"} _hover={{ colorScheme: theme === "dark" ? "white" : "black" }} _active={{
                         bg: theme === "dark" ? "white" : "black", transform: 'scale(0.90)', borderColor: '#000000'
                     }}>Github</Button>
                 </Link>
                 <Link href='https://e-plant.vercel.app/' isExternal className="project-deployed-link">
-                    <Button mt={"15px"} backgroundColor="#426800" color={"white"} _hover={{ colorScheme: "#426800" }} rightIcon={<ExternalLinkIcon />} border={"1px solid black"} _active={{
+                    <Button mt={"15px"} backgroundColor="#426800" color={"white"} w={"100%"} _hover={{ colorScheme: "#426800" }} rightIcon={<ExternalLinkIcon />} border={"1px solid black"} _active={{
                         bg: '#426800', transform: 'scale(0.90)', borderColor: '#000000'
                     }}>Live Demo</Button>
                 </Link>

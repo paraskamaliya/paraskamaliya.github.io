@@ -30,43 +30,43 @@ const Skills = () => {
                 <Heading textAlign={"center"} fontSize={"3xl"} mt={5} >Tech Stacks</Heading>
 
                 <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(5,1fr)"]} fontSize={"2xl"} textAlign={"center"} gap={"7"} border={theme === "dark" ? "1px solid white" : "1px solid black"} borderRadius={10}>
-                    <GridItem justifyContent={"center"} justifyItems={"center"} className="skills-card-name" >
+                    <GridItem justifyContent={"center"} justifyItems={"center"} className="skills-card-name skills-card" >
                         <Image src={html} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="html" className="skills-card-img" />
                         HTML
                     </GridItem>
-                    <GridItem className="skills-card-name">
+                    <GridItem className="skills-card-name skills-card">
                         <Image src={css} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="css" className="skills-card-img" />
                         CSS
                     </GridItem>
-                    <GridItem className="skills-card-name">
+                    <GridItem className="skills-card-name skills-card">
                         <Image src={js} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="js" className="skills-card-img" />
                         JavaScript
                     </GridItem>
-                    <GridItem className="skills-card-name">
+                    <GridItem className="skills-card-name skills-card">
                         <Image src={react} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="react" className="skills-card-img" />
                         React
                     </GridItem>
-                    <GridItem className="skills-card-name">
+                    <GridItem className="skills-card-name skills-card">
                         <Image src={redux} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="redux" className="skills-card-img" />
                         Redux
                     </GridItem>
-                    <GridItem className="skills-card-name">
+                    <GridItem className="skills-card-name skills-card">
                         <Image src={ts} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="ts" className="skills-card-img" />
                         TypeScript
                     </GridItem>
-                    <GridItem className="skills-card-name">
+                    <GridItem className="skills-card-name skills-card">
                         <Image src={chakra} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="chakraui" className="skills-card-img" />
                         Chakra UI
                     </GridItem>
-                    <GridItem className="skills-card-name">
+                    <GridItem className="skills-card-name skills-card">
                         <Image src={express} bg={"white"} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="express" className="skills-card-img" />
                         Express
                     </GridItem>
-                    <GridItem className="skills-card-name" w={"100%"}>
+                    <GridItem className="skills-card-name skills-card" w={"100%"}>
                         <Image src={mongo} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="mongodb" className="skills-card-img" />
                         MongoDB
                     </GridItem>
-                    <GridItem className="skills-card-name">
+                    <GridItem className="skills-card-name skills-card">
                         <Image src={node} objectFit="cover" h={"100px"} w={"100px"} m={"auto"} alt="nodejs" className="skills-card-img" />
                         Node.js
                     </GridItem>
@@ -78,27 +78,27 @@ const Skills = () => {
                     <Box m={"auto"} textAlign={"center"}>
                         <Heading fontSize={"3xl"} fontWeight={400} m={"auto"} mt={"7px"} mb={"5px"} w={"90%"} borderBottom={"1px"}>Mindsets</Heading>
                         <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(6,1fr)"]} m={"auto"} templateRows={"auto"} textAlign={"center"} w={"100%"} mt={"5px"}>
-                            <GridItem className="skills-card-name" w={"100%"} m={"auto"} >
+                            <GridItem className="skills-card-name skills-card" w={"100%"} m={"auto"} >
                                 <Image src={teamwork} w={"50%"} objectFit={"cover"} m={"auto"} alt="teamwork" className="skills-card-img" />
                                 Team Work
                             </GridItem>
-                            <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
+                            <GridItem className="skills-card-name skills-card" w={"100%"} m={"auto"}>
                                 <Image src={creative} w={"50%"} objectFit={"cover"} m={"auto"} alt="creative" className="skills-card-img" />
                                 Creative
                             </GridItem>
-                            <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
-                                <Image src={adaptabilty} className="skills-card-name" w={"50%"} objectFit={"cover"} m={"auto"} alt="adaptablity" />
+                            <GridItem className="skills-card-name skills-card" w={"100%"} m={"auto"}>
+                                <Image src={adaptabilty} className="skills-card-name skills-card" w={"50%"} objectFit={"cover"} m={"auto"} alt="adaptablity" />
                                 Adaptability
                             </GridItem>
-                            <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
+                            <GridItem className="skills-card-name skills-card" w={"100%"} m={"auto"}>
                                 <Image src={self} w={"50%"} objectFit={"cover"} m={"auto"} alt="selflearn" className="skills-card-img" />
                                 Self Learn
                             </GridItem>
-                            <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
+                            <GridItem className="skills-card-name skills-card" w={"100%"} m={"auto"}>
                                 <Image src={growth} w={"50%"} objectFit={"cover"} m={"auto"} alt="growth" className="skills-card-img" />
                                 Growth
                             </GridItem>
-                            <GridItem className="skills-card-name" w={"100%"} m={"auto"}>
+                            <GridItem className="skills-card-name skills-card" w={"100%"} m={"auto"}>
                                 <Image src={ownership} w={"50%"} objectFit={"cover"} m={"auto"} alt="ownership" className="skills-card-img" />
                                 Ownership
                             </GridItem>
@@ -107,23 +107,23 @@ const Skills = () => {
                         <Heading fontSize={"3xl"} fontWeight={400} mt={"7px"} mb={"5px"} m={"auto"} borderBottom={"1px"}>Toolsets</Heading>
                         <Box w={"100%"}>
                             <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} m={"auto"} textAlign={"center"} w={"100%"} mt={"5px"} h={"100%"}>
-                                <GridItem className="skills-card-name">
+                                <GridItem className="skills-card-name skills-card">
                                     <Image src={github} w={"50%"} objectFit={"cover"} m={"auto"} alt="githhub" className="skills-card-img" />
                                     GitHub
                                 </GridItem>
-                                <GridItem className="skills-card-name">
+                                <GridItem className="skills-card-name skills-card">
                                     <Image src={netlify} w={"50%"} objectFit={"cover"} m={"auto"} alt="netlify" className="skills-card-img" />
                                     Netlify
                                 </GridItem>
-                                <GridItem justifyContent={"center"} className="skills-card-name">
+                                <GridItem justifyContent={"center"} className="skills-card-name skills-card">
                                     <Image src={vercel} w={"50%"} objectFit={"cover"} m={"auto"} bg={"white"} alt="vercel" className="skills-card-img" />
                                     Vercel
                                 </GridItem>
-                                <GridItem className="skills-card-name">
+                                <GridItem className="skills-card-name skills-card">
                                     <Image src={jest} w={"50%"} objectFit={"cover"} m={"auto"} alt="jest" className="skills-card-img" />
                                     Jest Testing
                                 </GridItem>
-                                <GridItem className="skills-card-name">
+                                <GridItem className="skills-card-name skills-card">
                                     <Image src={cypress} w={"50%"} m={"auto"} bg={"white"} alt="cypress" className="skills-card-img" />
                                     Cypress Testing
                                 </GridItem>

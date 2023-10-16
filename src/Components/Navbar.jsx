@@ -25,13 +25,11 @@ const Navbar = () => {
 
                 <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="nav-link projects" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>Projects</Link>
 
-                <Link className="nav-link contact" to="contact" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>Contact</Link>
+                <Link activeClass="active" className="nav-link contact" to="contact" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} spy={true} smooth={true} offset={-120} duration={500}>Contact</Link>
             </HStack>
             <Spacer />
-            <HStack display={{ base: 'none', md: 'flex' }}>
-                <IconButton icon={theme == "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme == "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
-                <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume">Resume</Button>
-            </HStack>
+            <IconButton mr={"10px"} icon={theme == "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme == "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
+            <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume">Resume</Button>
             <IconButton
                 display={{ base: 'inline-flex', md: 'none' }}
                 ref={btnRef}
@@ -69,11 +67,7 @@ const Navbar = () => {
 
                         <Link className="nav-link contact" to="contact" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>Contact</Link>
 
-                        <HStack >
-                            <IconButton icon={theme == "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme == "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
-
-                            <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume">Resume</Button>
-                        </HStack>
+                        <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume">Resume</Button>
                     </VStack>
                 </DrawerBody>
             </DrawerContent>

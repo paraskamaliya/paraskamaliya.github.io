@@ -8,7 +8,7 @@ import TechSchool from "../Project Component/TechSchool";
 const Projects = () => {
     const theme = useSelector(store => store.theme);
     return <Box w={"100%"} backgroundColor={theme === "dark" ? "black" : "white"} color={theme === "dark" ? "white" : "black"} id="projects">
-        <Box w={"90%"} m={"auto"} pt={"1rem"} >
+        <Box w={"90%"} m={"auto"} pt={"1rem"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
             <Heading textAlign={"center"} color={"#4A90E2"} textDecoration={"underline"} textDecorationColor={"#4A90E2"}>Projects</Heading>
             <EPlant />
             <Connect />
