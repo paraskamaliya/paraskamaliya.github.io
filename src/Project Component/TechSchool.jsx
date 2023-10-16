@@ -12,7 +12,7 @@ const TechSchool = () => {
         </Box>
         <Box w={["80%", "80%", "50%", "50%", "50%"]}>
             <Heading fontSize={"5xl"} className="project-title">Tech School</Heading>
-            <Text mt={"15px"} mb={"15px"} className="project-description" >Tech School is my inaugural web development project, a basic website designed to showcase my foundational skills in web development. As a <span style={{ color: "#00a2ff" }}>beginner</span> in the world of coding and web design, I embarked on this project with a clear objective: to create a simple yet <span style={{ color: "#00a2ff" }}>informative website</span>.</Text>
+            <Text mt={"15px"} mb={"15px"} className="project-description" >Tech School is my inaugural web development project, a basic website designed to showcase my foundational skills in web development. As a <span style={{ color: "#4A90E2" }}>beginner</span> in the world of coding and web design, I embarked on this project with a clear objective: to create a simple yet <span style={{ color: "#4A90E2" }}>informative website</span>.</Text>
             <Grid templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(3,1fr)"]} templateRows={"auto"} gap={"10px"} className="project-tech-stack" >
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="red" color={"black"} w={"100%"}>HTML</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="blue" color={"black"} w={"100%"} >CSS</Button></GridItem>

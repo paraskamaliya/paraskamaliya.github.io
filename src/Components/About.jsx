@@ -8,9 +8,9 @@ const About = () => {
     return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} id="about" className="about section" >
         <Box w={"90%"} m={"auto"} padding={"1rem"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
             <Card m={"auto"} bg={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} border={"none"}>
-                <Heading color={"#00a2ff"} textAlign={"center"} textDecoration={"underline"} textDecorationColor={"#00a2ff"}>About Me</Heading>
+                <Heading color={"#4A90E2"} textAlign={"center"} textDecoration={"underline"} textDecorationColor={"#4A90E2"}>About Me</Heading>
                 <CardBody >
-                    <Text fontSize={"1.5rem"} w={"80%"} m={"auto"} id="user-detail-intro">Hello, I'm <span style={{ color: "#00a2ff" }}>Paras Kamaliya</span>, an aspiring <span style={{ color: "#00a2ff" }}>Full Stack Web Developer</span> with a deep curiosity for exploring industry-standard tech stacks. Proficient in the <span style={{ color: "#00a2ff" }}>MERN stack</span>, I'm eager to kickstart my career with an organization that offers opportunities for skill enhancement and <span style={{ color: "#00a2ff" }}>personal growth</span>, aligning with the organization's objectives.</Text>
+                    <Text fontSize={"1.5rem"} w={"80%"} m={"auto"} id="user-detail-intro">Hello, I'm <span style={{ color: "#4A90E2" }}>Paras Kamaliya</span>, an aspiring <span style={{ color: "#4A90E2" }}>Full Stack Web Developer</span> with a deep curiosity for exploring industry-standard tech stacks. Proficient in the <span style={{ color: "#4A90E2" }}>MERN stack</span>, I'm eager to kickstart my career with an organization that offers opportunities for skill enhancement and <span style={{ color: "#4A90E2" }}>personal growth</span>, aligning with the organization's objectives.</Text>
                     <br />
                     <Grid w={"80%"} m={"auto"} display={"grid"} templateColumns={["repeat(1,1fr)", "repeat(1,1fr)", "repeat(2,1fr)", "repeat(4,1fr)", "repeat(4,1fr)"]} templateRows={["repeat(4,1fr)", "repeat(4,1fr)", "repeat(2,1fr)", "repeat(1,1fr)", "repeat(1,1fr)"]}  >
                         <GridItem fontSize={"1.2rem"} m="auto" textAlign={"center"} >
