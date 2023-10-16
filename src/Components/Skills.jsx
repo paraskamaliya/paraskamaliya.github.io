@@ -87,7 +87,7 @@ const Skills = () => {
                                 <Text className="skills-card-name">Creative</Text>
                             </GridItem>
                             <GridItem className="skills-card" w={"100%"} m={"auto"}>
-                                <Image src={adaptabilty} className="skills-card" w={"50%"} objectFit={"cover"} m={"auto"} alt="adaptablity" />
+                                <Image src={adaptabilty} className="skills-card-img" w={"50%"} objectFit={"cover"} m={"auto"} alt="adaptablity" />
                                 <Text className="skills-card-name">Adaptability</Text>
                             </GridItem>
                             <GridItem className="skills-card" w={"100%"} m={"auto"}>
