@@ -14,7 +14,9 @@ const Navbar = () => {
     const dispatch = useDispatch();
     return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} id="nav-menu" position={"sticky"} top={"0"} zIndex={"100"}>
         <Box display={"flex"} flexDirection={["row"]} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
-            <Image src={theme == "dark" ? blackImg : whiteImg} alt="LOGO" objectFit={"cover"} boxSize={"100px"} id="home" m={"10px"} />
+            <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-115} duration={500} style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>
+                <Image src={theme == "dark" ? blackImg : whiteImg} alt="LOGO" objectFit={"cover"} boxSize={"100px"} id="home" m={"10px"} />
+            </Link>
             <Spacer />
             <HStack display={{ base: 'none', md: 'flex' }}>
                 <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-115} duration={500} className="nav-link home" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>Home</Link>
