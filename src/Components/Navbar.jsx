@@ -65,7 +65,7 @@ const Navbar = () => {
 
                         <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="nav-link projects" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>Projects</Link>
 
-                        <Link className="nav-link contact" to="contact" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>Contact</Link>
+                        <Link activeClass="active" className="nav-link contact" to="contact" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} spy={true} smooth={true} offset={-120} duration={500} onClick={onClose}>Contact</Link>
 
                         <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume">Resume</Button>
                     </VStack>
