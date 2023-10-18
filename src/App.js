@@ -5,6 +5,7 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import "../src/App.css"
 import Contact from "./Components/Contact";
+import { Text } from "@chakra-ui/react";
 
 function App() {
   return (

@@ -12,7 +12,7 @@ const About = () => {
                 <CardBody >
                     <Text fontSize={"1.5rem"} w={["100%", "100%", "80%", "80%", "80%"]} m={"auto"} id="user-detail-intro">Hello, I'm <span style={{ color: "#4A90E2" }}>Paras Kamaliya</span>, an aspiring <span style={{ color: "#4A90E2" }}>Full Stack Web Developer</span> with a deep curiosity for exploring industry-standard tech stacks. Proficient in the <span style={{ color: "#4A90E2" }}>MERN stack</span>, I'm eager to kickstart my career with an organization that offers opportunities for skill enhancement and <span style={{ color: "#4A90E2" }}>personal growth</span>, aligning with the organization's objectives.</Text>
                     <br />
-                    <Grid w={"80%"} m={"auto"} display={"grid"} templateColumns={["repeat(1,1fr)", "repeat(1,1fr)", "repeat(2,1fr)", "repeat(4,1fr)", "repeat(4,1fr)"]} templateRows={["repeat(4,1fr)", "repeat(4,1fr)", "repeat(2,1fr)", "repeat(1,1fr)", "repeat(1,1fr)"]}  >
+                    <Grid w={"80%"} m={"auto"} display={"grid"} templateColumns={["repeat(1,1fr)", "repeat(1,1fr)", "repeat(2,1fr)", "repeat(4,1fr)", "repeat(4,1fr)"]} templateRows={["repeat(4,1fr)", "repeat(4,1fr)", "repeat(2,1fr)", "repeat(1,1fr)", "repeat(1,1fr)"]} >
                         <GridItem fontSize={"1.2rem"} m="auto" textAlign={"center"} >
                             <Icon as={TiLocation} fontSize={"1.2rem"} />{" "}
                             <a href="https://maps.app.goo.gl/EvkNWhR4jAuUGEY26" target="_blank">Surat,Gujarat</a>

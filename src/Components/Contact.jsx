@@ -36,15 +36,15 @@ const Contact = () => {
             <Grid w={["100%", "100%", "60%", "60%", "60%"]} m={"auto"} templateColumns={["repeat(1,1fr)", "repeat(1,1fr)", "repeat(2,1fr)", "repeat(2,1fr)", "repeat(2,1fr)"]} mt={"10px"} rowGap={"10px"}>
                 <GridItem display={"flex"} alignItems={"center"} m={"auto"} >
                     <Icon as={EmailIcon} fontSize={"1.5rem"} />
-                    <a href="mailto:paraskamaliya5@gmail.com" target="_blank" id="contact-email"> paraskamaliya5@gmail.com</a>
+                    <a href="mailto:paraskamaliya5@gmail.com" target="_blank" id="contact-email">paraskamaliya5@gmail.com</a>
                 </GridItem>
                 <GridItem display={"flex"} alignItems={"center"} m={"auto"}>
                     <Icon as={AiFillLinkedin} fontSize={"1.5rem"} id="contact-linkedin" />
-                    <a href="https://www.linkedin.com/in/paraskamaliya/" target="_blank"> LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/paraskamaliya/" target="_blank">LinkedIn</a>
                 </GridItem>
                 <GridItem display={"flex"} alignItems={"center"} m={"auto"}>
                     <Icon as={PhoneIcon} fontSize={"1.5rem"} />
-                    <a id="contact-phone"> +91 9376464040</a>
+                    <a id="contact-phone">+91 9376464040</a>
                 </GridItem>
                 <GridItem display={"flex"} alignItems={"center"} m={"auto"}>
                     <Icon as={AiFillGithub} fontSize={"1.5rem"} id="contact-github" />
@@ -52,6 +52,7 @@ const Contact = () => {
                 </GridItem>
             </Grid>
         </Box>
+        <Text textAlign={"center"} mt={"5px"}>Created & Designed by <a href="https://github.com/paraskamaliya" target="_blank" style={{ color: "#4A90E2" }}>Paras Kamaliya</a></Text>
     </Box >
 }
 export default Contact;
