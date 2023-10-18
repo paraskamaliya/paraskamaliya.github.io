@@ -25,8 +25,8 @@ const Projects = () => {
                     <Image id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=paraskamaliya&show_icons=true&theme=transparent" alt="GitHub stats" />
                     <Image id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=paraskamaliya&theme=transparent" alt="GitHub Streak" style={{ maxWidth: "100%" }} />
                 </Stack>
-                <Box w={"80%"} m={"auto"}>
-                    <Image className="react-activity-calendar" src="https://ghchart.rshah.org/006AFF/paraskamaliya" alt="Github Contribution" m={"auto"} />
+                <Box w={"80%"} m={"auto"} className="react-activity-calendar">
+                    <Image src="https://ghchart.rshah.org/006AFF/paraskamaliya" alt="Github Contribution" m={"auto"} />
                 </Box>
             </Box>
         </Box>

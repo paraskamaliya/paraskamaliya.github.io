@@ -2,6 +2,7 @@ import { Box, Button, Divider, Heading, Image, Link, Stack, Text } from "@chakra
 import ProfilePic from "../Photos/profilepic.png"
 import { useSelector } from "react-redux";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import resume from "../assets/ParasKamaliya_Resume.pdf"
 const Intro = () => {
     const theme = useSelector(store => store.theme)
     return <Box bg={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} w={"100%"} id="intro" >
@@ -12,9 +13,9 @@ const Intro = () => {
                     <Heading textAlign={"left"} fontSize={"4rem"}>I'm <span style={{ color: "#4A90E2" }} id="user-detail-name">Paras</span></Heading>
                     <Heading textAlign={"left"} fontSize={"3.5rem"} >Full Stack Web Developer</Heading>
                     <Text textAlign={"left"} fontSize={"1.2rem"} noOfLines={2} fontWeight={300} >Skilled Full stack Web developer and experienced <br /> in creating User freindly Interface websites.</Text>
-                    <Link href="paraskamaliya.github.io" isExternal>
+                    <a href={resume} isExternal download={resume} id="resume-link-2">
                         <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1">Resume</Button>
-                    </Link>
+                    </a>
                 </Box>
                 <Box w={["100%", "85%", "70%", "50%", "50%"]} m={"auto"} position={"sticky"} h={"100%"} alignItems={"flex-end"}>
                     <Image src={ProfilePic} m={"auto"} objectFit={"cover"} className="home-img" alt="profilepic" flex={1} />
