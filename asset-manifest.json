@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.106bf4a4.css",
-    "main.js": "/static/js/main.832b8ae7.js",
+    "main.js": "/static/js/main.e801024b.js",
     "static/media/Home Page.png": "/static/media/Home Page.bd58fd95e81a4f69fdac.png",
     "static/media/Tech School Home Page.png": "/static/media/Tech School Home Page.01bc420da5292518f09b.png",
     "static/media/ParasKamaliya_Resume.pdf": "/static/media/ParasKamaliya_Resume.8c20e56f0388831133a5.pdf",
@@ -13,10 +13,10 @@
     "static/media/2.webp": "/static/media/2.9fba8650506e65a16def.webp",
     "index.html": "/index.html",
     "main.106bf4a4.css.map": "/static/css/main.106bf4a4.css.map",
-    "main.832b8ae7.js.map": "/static/js/main.832b8ae7.js.map"
+    "main.e801024b.js.map": "/static/js/main.e801024b.js.map"
   },
   "entrypoints": [
     "static/css/main.106bf4a4.css",
-    "static/js/main.832b8ae7.js"
+    "static/js/main.e801024b.js"
   ]
 }
