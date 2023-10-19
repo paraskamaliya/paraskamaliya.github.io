@@ -1,5 +1,5 @@
-import { EmailIcon, ExternalLinkIcon } from "@chakra-ui/icons";
-import { Box, Card, CardHeader, CardBody, Divider, Text, Icon, Grid, GridItem, Heading, Link } from "@chakra-ui/react";
+import { EmailIcon } from "@chakra-ui/icons";
+import { Box, Card, CardBody, Text, Icon, Grid, GridItem, Heading } from "@chakra-ui/react";
 import { TiLocation } from "react-icons/ti"
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { useSelector } from "react-redux";

@@ -2,14 +2,12 @@ import { useRef } from "react";
 import emailjs from '@emailjs/browser'
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-
-const { Box, Heading, Input, Textarea, Text, Icon, Grid, GridItem, Alert, AlertIcon, useToast } = require("@chakra-ui/react");
+const { Box, Heading, Input, Textarea, Text, Icon, Grid, GridItem } = require("@chakra-ui/react");
 const { useSelector } = require("react-redux");
 
 const Contact = () => {
     const theme = useSelector(store => store.theme);
     const form = useRef();
-    const toast = useToast()
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_iku25nd', 'template_txilc1e', form.current, '5Y69d0Q5j2uOZ72t-')

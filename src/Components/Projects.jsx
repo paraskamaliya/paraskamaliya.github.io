@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Stack, Text } from "@chakra-ui/react"
+import { Box, Heading, Image, Stack } from "@chakra-ui/react"
 import EPlant from "../Project Component/EPlant";
 import Connect from "../Project Component/Connect";
 import PaintKu from "../Project Component/PaintKu";
