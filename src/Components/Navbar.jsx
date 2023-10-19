@@ -15,8 +15,8 @@ const Navbar = () => {
     const dispatch = useDispatch();
     return <Box w={"100%"} backgroundColor={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} id="nav-menu" position={"sticky"} top={"0"} zIndex={"100"}>
         <Box display={"flex"} flexDirection={["row"]} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
-            <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-115} duration={500} style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>
-                <Image src={theme == "dark" ? blackImg : whiteImg} alt="LOGO" objectFit={"cover"} boxSize={"100px"} id="home" m={"10px"} />
+            <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>
+                <Image src={theme == "dark" ? blackImg : whiteImg} alt="LOGO" objectFit={"cover"} boxSize={"100px"} id="homeimg" m={"10px"} />
             </Link>
             <Spacer />
             <HStack display={{ base: 'none', md: 'flex' }}>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <DrawerHeader color={theme == "dark" ? "white" : "black"} borderBottomWidth="1px" borderBottomColor={theme == "dark" ? "white" : "black"}>Menu</DrawerHeader>
                 <DrawerBody>
                     <VStack direction="column" spacing={4} onClick={onClose}>
-                        <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-115} duration={500} className="nav-link home" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>Home</Link>
+                        <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} className="nav-link home" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>Home</Link>
 
                         <Link activeClass="active" to="about" spy={true} smooth={true} offset={-115} duration={500} className="nav-link about" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>About</Link>
 
@@ -74,7 +74,9 @@ const Navbar = () => {
 
                         <Link activeClass="active" className="nav-link contact" to="contact" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} spy={true} smooth={true} offset={-120} duration={500} onClick={onClose}>Contact</Link>
 
-                        <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume">Resume</Button>
+                        <a href={Resume} id="resume-link-1" download={"ParasKamaliya_Resume.pdf"}>
+                            <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume" >Resume</Button>
+                        </a>
                     </VStack>
                 </DrawerBody>
             </DrawerContent>
