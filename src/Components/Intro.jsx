@@ -3,7 +3,11 @@ import ProfilePic from "../Photos/profilepic.png"
 import { useSelector } from "react-redux";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 const Intro = () => {
-    const theme = useSelector(store => store.theme)
+    const theme = useSelector(store => store.theme);
+    const downloadResume = () => {
+        const resumeUrl = './ParasKamaliya_Resume.pdf';
+        window.open(resumeUrl, '_blank');
+    };
     return <Box bg={theme == "dark" ? "black" : "white"} color={theme == "dark" ? "white" : "black"} w={"100%"} id="home" >
         <Box m={"auto"} w={"90%"} >
             <Stack display={"flex"} m={"auto"} justifyContent={"center"} flexDirection={["column", "column", "row", "row", "row"]} alignItems={"center"} w={"100%"} borderBottom={"1px"} borderBottomColor={theme == "dark" ? "white" : "black"}>
@@ -12,8 +16,8 @@ const Intro = () => {
                     <Heading textAlign={"left"} fontSize={"4rem"}>I'm <span style={{ color: "#4A90E2" }} id="user-detail-name">Paras</span></Heading>
                     <Heading textAlign={"left"} fontSize={"3.5rem"} >Full Stack Web Developer</Heading>
                     <Text textAlign={"left"} fontSize={"1.2rem"} noOfLines={2} fontWeight={300} >Skilled Full stack Web developer and experienced <br /> in creating User freindly Interface websites.</Text>
-                    <a href={"./ParasKamaliya_Resume.pdf"} download id="resume-link-2" target="_blank">
-                        <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-2">Resume</Button>
+                    <a href={"./ParasKamaliya_Resume.pdf"} id="resume-link-2" download>
+                        <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} onClick={downloadResume} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-2">Resume</Button>
                     </a>
                 </Box>
                 <Box w={["100%", "85%", "70%", "50%", "50%"]} m={"auto"} position={"sticky"} h={"100%"} alignItems={"flex-end"}>
