@@ -12,7 +12,7 @@ const Intro = () => {
                     <Heading textAlign={"left"} fontSize={"4rem"}>I'm <span style={{ color: "#4A90E2" }} id="user-detail-name">Paras</span></Heading>
                     <Heading textAlign={"left"} fontSize={"3.5rem"} >Full Stack Web Developer</Heading>
                     <Text textAlign={"left"} fontSize={"1.2rem"} noOfLines={2} fontWeight={300} >Skilled Full stack Web developer and experienced <br /> in creating User freindly Interface websites.</Text>
-                    <a href={"../../public/ParasKamaliya_Resume.pdf"} download id="resume-link-2" target="_blank" >
+                    <a href={"../../public/ParasKamaliya_Resume.pdf"} download id="resume-link-2" >
                         <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-2">Resume</Button>
                     </a>
                 </Box>
