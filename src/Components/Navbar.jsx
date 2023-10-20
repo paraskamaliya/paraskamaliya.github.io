@@ -19,23 +19,37 @@ const Navbar = () => {
             </Link>
             <Spacer />
             <HStack display={{ base: 'none', md: 'flex' }}>
-                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} className="nav-link home" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>Home</Link>
+                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} className="nav-link home" style={{
+                    color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer", transition: "color 0.3s"
+                }} onMouseEnter={(e) => (e.target.style.color = "#4A90E2")} onMouseLeave={(e) => (e.target.style.color = theme === "dark" ? "white" : "black")
+                }>Home</Link>
 
-                <Link activeClass="active" to="about" spy={true} smooth={true} offset={-115} duration={500} className="nav-link about" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>About</Link>
+                <Link activeClass="active" to="about" spy={true} smooth={true} offset={-115} duration={500} className="nav-link about" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer", transition: "color 0.3s" }} onMouseEnter={(e) => (e.target.style.color = "#4A90E2")}
+                    onMouseLeave={(e) =>
+                        (e.target.style.color = theme === "dark" ? "white" : "black")
+                    }>About</Link>
 
-                <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-120} duration={500} className="nav-link skills" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>Skills</Link>
+                <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-120} duration={500} className="nav-link skills" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer", transition: "color 0.3s" }} onMouseEnter={(e) => (e.target.style.color = "#4A90E2")}
+                    onMouseLeave={(e) =>
+                        (e.target.style.color = theme === "dark" ? "white" : "black")
+                    }>Skills</Link>
 
-                <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="nav-link projects" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>Projects</Link>
+                <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="nav-link projects" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer", transition: "color 0.3s" }} onMouseEnter={(e) => (e.target.style.color = "#4A90E2")}
+                    onMouseLeave={(e) =>
+                        (e.target.style.color = theme === "dark" ? "white" : "black")
+                    }>Projects</Link>
 
-                <Link activeClass="active" className="nav-link contact" to="contact" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} spy={true} smooth={true} offset={-120} duration={500}>Contact</Link>
+                <Link activeClass="active" className="nav-link contact" to="contact" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer", transition: "color 0.3s" }} spy={true} smooth={true} offset={-120} duration={500} onMouseEnter={(e) => (e.target.style.color = "#4A90E2")}
+                    onMouseLeave={(e) =>
+                        (e.target.style.color = theme === "dark" ? "white" : "black")
+                    }>Contact</Link>
             </HStack>
             <Spacer />
             <IconButton mr={"10px"} icon={theme == "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme === "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
 
-            <a href={"./ParasKamaliya_Resume.pdf"} id="resume-link-1" download>
-                <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume" id="resume-button-1">Resume</Button>
-            </a>
-
+            <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-link-1">
+                <a href={"../../public/ParasKamaliya_Resume.pdf"} id="resume-button-1" download className="nav-link resume">RESUME</a>
+            </Button>
             <IconButton
                 display={{ base: 'inline-flex', md: 'none' }}
                 ref={btnRef}
@@ -73,8 +87,8 @@ const Navbar = () => {
 
                         <Link activeClass="active" className="nav-link contact" to="contact" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} spy={true} smooth={true} offset={-120} duration={500} onClick={onClose}>Contact</Link>
 
-                        <a href={"./ParasKamaliya_Resume.pdf"} id="resume-link-1" download>
-                            <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume" id="resume-button-1">Resume</Button>
+                        <a href={"./ParasKamaliya_Resume.pdf"} download>
+                            <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume" >Resume</Button>
                         </a>
                     </VStack>
                 </DrawerBody>
