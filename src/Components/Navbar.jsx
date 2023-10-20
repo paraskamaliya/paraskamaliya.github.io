@@ -47,8 +47,8 @@ const Navbar = () => {
             <Spacer />
             <IconButton mr={"10px"} icon={theme == "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme === "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
 
-            <a href={"../../public/ParasKamaliya_Resume.pdf"} id="resume-button-1" download className="nav-link resume">
-                <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-link-1">RESUME</Button>
+            <a href={"../../public/ParasKamaliya_Resume.pdf"} id="resume-link-1" download className="nav-link resume">
+                <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1">RESUME</Button>
             </a>
             <IconButton
                 display={{ base: 'inline-flex', md: 'none' }}
