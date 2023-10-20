@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
-    scrollbar-width: thin;
     width: 8px;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
