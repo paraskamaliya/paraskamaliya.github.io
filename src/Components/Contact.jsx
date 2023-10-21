@@ -42,7 +42,7 @@ const Contact = () => {
                 </GridItem>
                 <GridItem display={"flex"} alignItems={"center"} m={"auto"}>
                     <Icon as={PhoneIcon} fontSize={"1.5rem"} />
-                    <a id="contact-phone">+91 9376464040</a>
+                    <a id="contact-phone" href="tel:+919376464040">+91 9376464040</a>
                 </GridItem>
                 <GridItem display={"flex"} alignItems={"center"} m={"auto"}>
                     <Icon as={AiFillGithub} fontSize={"1.5rem"} id="contact-github" />

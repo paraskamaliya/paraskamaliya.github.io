@@ -15,19 +15,19 @@ const About = () => {
                     <Grid w={"80%"} m={"auto"} display={"grid"} templateColumns={["repeat(1,1fr)", "repeat(1,1fr)", "repeat(2,1fr)", "repeat(4,1fr)", "repeat(4,1fr)"]} templateRows={["repeat(4,1fr)", "repeat(4,1fr)", "repeat(2,1fr)", "repeat(1,1fr)", "repeat(1,1fr)"]} >
                         <GridItem fontSize={"1.2rem"} m="auto" textAlign={"center"} >
                             <Icon as={TiLocation} fontSize={"1.2rem"} />{" "}
-                            <a href="https://maps.app.goo.gl/EvkNWhR4jAuUGEY26" target="_blank">Surat,Gujarat</a>
+                            <a href="https://maps.app.goo.gl/EvkNWhR4jAuUGEY26" target="_blank" rel="noreferrer noopener">Surat,Gujarat</a>
                         </GridItem>
                         <GridItem fontSize={"1.2rem"} m="auto" textAlign={"center"} >
                             <Icon as={EmailIcon} fontSize={"1.2rem"} />{" "}
-                            <a href="mailto:paraskamaliya5@gmail.com" target="_blank">paraskamaliya5<br />@gmail.com</a>
+                            <a href="mailto:paraskamaliya5@gmail.com" target="_blank" rel="noreferrer noopener">paraskamaliya5<br />@gmail.com</a>
                         </GridItem>
                         <GridItem fontSize={"1.2rem"} m="auto" textAlign={"center"} >
                             <Icon as={AiFillGithub} fontSize={"1.2rem"} />{" "}
-                            <a href="https://github.com/paraskamaliya" target="_blank">GitHub</a>
+                            <a href="https://github.com/paraskamaliya" target="_blank" rel="noreferrer noopener">GitHub</a>
                         </GridItem>
                         <GridItem fontSize={"1.2rem"} m="auto" textAlign={"center"} >
                             <Icon as={AiFillLinkedin} fontSize={"1.2rem"} />{" "}
-                            <a href="https://www.linkedin.com/in/paraskamaliya/" target="_blank">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/paraskamaliya/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
                         </GridItem>
                     </Grid>
                 </CardBody>
