@@ -12,10 +12,9 @@ const Intro = () => {
                     <Heading textAlign={"left"} fontSize={"4rem"}>I'm <span style={{ color: "#4A90E2" }} id="user-detail-name">Paras</span></Heading>
                     <Heading textAlign={"left"} fontSize={"3.5rem"} >Full Stack Web Developer</Heading>
                     <Text textAlign={"left"} fontSize={"1.2rem"} noOfLines={2} fontWeight={300} >Skilled Full stack Web developer and experienced <br /> in creating User freindly Interface websites.</Text>
-                    <a href={"ParasKamaliya_Resume.pdf"} id="resume-button-2" target="display">
-                        {/* <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-2" ></Button> */}
-                        Resume
-                        <ExternalLinkIcon />
+                    <a href={"ParasKamaliya_Resume.pdf"} id="resume-link-2" target="display" download={"ParasKamaliya_Resume.pdf"}>
+                        <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-2" >Resume</Button>
+                        {/* <ExternalLinkIcon /> */}
                     </a>
                 </Box>
                 <Box w={["100%", "85%", "70%", "50%", "50%"]} m={"auto"} position={"sticky"} h={"100%"} alignItems={"flex-end"}>
