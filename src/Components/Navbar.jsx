@@ -44,7 +44,7 @@ const Navbar = () => {
                     }>Contact</Link>
             </HStack>
             <Spacer />
-            <IconButton mr={"10px"} icon={theme == "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme === "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
+            <IconButton mr={"10px"} icon={theme === "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme === "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
 
             <a href={"ParasKamaliya_Resume.pdf"} id="resume-link-1" download className="nav-link resume">
                 <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1">RESUME</Button>
@@ -54,8 +54,8 @@ const Navbar = () => {
                 ref={btnRef}
                 aria-label="Open menu"
                 icon={<HamburgerIcon />}
-                color={theme == "dark" ? "black" : "white"}
-                bg={theme == "dark" ? "white" : "black"}
+                color={theme === "dark" ? "black" : "white"}
+                bg={theme === "dark" ? "white" : "black"}
                 onClick={onOpen}
                 variant="ghost"
                 _hover={{ color: "none" }}
@@ -71,20 +71,20 @@ const Navbar = () => {
             variant={"outline"}
         >
             <DrawerOverlay />
-            <DrawerContent bg={theme == "dark" ? "black" : "white"}>
-                <DrawerCloseButton color={theme == "dark" ? "white" : "black"} />
-                <DrawerHeader color={theme == "dark" ? "white" : "black"} borderBottomWidth="1px" borderBottomColor={theme == "dark" ? "white" : "black"}>Menu</DrawerHeader>
+            <DrawerContent bg={theme === "dark" ? "black" : "white"}>
+                <DrawerCloseButton color={theme === "dark" ? "white" : "black"} />
+                <DrawerHeader color={theme === "dark" ? "white" : "black"} borderBottomWidth="1px" borderBottomColor={theme === "dark" ? "white" : "black"}>Menu</DrawerHeader>
                 <DrawerBody>
                     <VStack direction="column" spacing={4} onClick={onClose}>
-                        <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} className="nav-link home" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>Home</Link>
+                        <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} className="nav-link home" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>Home</Link>
 
-                        <Link activeClass="active" to="about" spy={true} smooth={true} offset={-115} duration={500} className="nav-link about" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>About</Link>
+                        <Link activeClass="active" to="about" spy={true} smooth={true} offset={-115} duration={500} className="nav-link about" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>About</Link>
 
-                        <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-120} duration={500} className="nav-link skills" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>Skills</Link>
+                        <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-120} duration={500} className="nav-link skills" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>Skills</Link>
 
-                        <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="nav-link projects" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>Projects</Link>
+                        <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="nav-link projects" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} onClick={onClose}>Projects</Link>
 
-                        <Link activeClass="active" className="nav-link contact" to="contact" style={{ color: theme == "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} spy={true} smooth={true} offset={-120} duration={500} onClick={onClose}>Contact</Link>
+                        <Link activeClass="active" className="nav-link contact" to="contact" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} spy={true} smooth={true} offset={-120} duration={500} onClick={onClose}>Contact</Link>
 
                         <a href={"./ParasKamaliya_Resume.pdf"} download>
                             <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume" >Resume</Button>
