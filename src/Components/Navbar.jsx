@@ -1,6 +1,5 @@
+import Logo from "../logo.webp"
 import { Box, Image, HStack, Button, Spacer, IconButton, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, VStack } from "@chakra-ui/react";
-import blackImg from "../Photos/3.webp"
-import whiteImg from "../Photos/2.webp"
 import { Link } from "react-scroll";
 import { ExternalLinkIcon, HamburgerIcon } from "@chakra-ui/icons"
 import { useDispatch, useSelector } from "react-redux";
@@ -15,7 +14,7 @@ const Navbar = () => {
     return <Box w={"100%"} backgroundColor={theme === "dark" ? "black" : "white"} color={theme === "dark" ? "white" : "black"} id="nav-menu" position={"sticky"} top={"0"} zIndex={"100"}>
         <Box display={"flex"} flexDirection={["row"]} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"}>
             <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>
-                <Image src={theme === "dark" ? blackImg : whiteImg} alt="LOGO" objectFit={"cover"} boxSize={"100px"} id="homeimg" m={"10px"} />
+                <Image src={Logo} alt="LOGO" objectFit={"cover"} boxSize={"100px"} id="homeimg" background={"white"} m={"10px"} borderRadius={"50%"} />
             </Link>
             <Spacer />
             <HStack display={{ base: 'none', md: 'flex' }}>
