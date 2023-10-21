@@ -88,8 +88,8 @@ const Navbar = () => {
 
                         <Link activeClass="active" className="nav-link contact" to="contact" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} spy={true} smooth={true} offset={-120} duration={500} onClick={onClose}>Contact</Link>
 
-                        <a href={"./ParasKamaliya_Resume.pdf"} download>
-                            <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} className="nav-link resume" >Resume</Button>
+                        <a href={"./ParasKamaliya_Resume.pdf"} target="_blank" rel="noreferrer" id="resume-link-1">
+                            <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1" className="nav-link resume" >Resume</Button>
                         </a>
                     </VStack>
                 </DrawerBody>
