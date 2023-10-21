@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.092804f3.css",
-    "main.js": "/static/js/main.40310972.js",
+    "main.js": "/static/js/main.3c465c87.js",
     "static/media/Home Page.png": "/static/media/Home Page.bd58fd95e81a4f69fdac.png",
     "static/media/Tech School Home Page.png": "/static/media/Tech School Home Page.01bc420da5292518f09b.png",
     "static/media/profilepic.png": "/static/media/profilepic.9a97d991dcb5c68f2d71.png",
@@ -11,10 +11,10 @@
     "static/media/logo.webp": "/static/media/logo.aa33e7de9b8d08846f62.webp",
     "index.html": "/index.html",
     "main.092804f3.css.map": "/static/css/main.092804f3.css.map",
-    "main.40310972.js.map": "/static/js/main.40310972.js.map"
+    "main.3c465c87.js.map": "/static/js/main.3c465c87.js.map"
   },
   "entrypoints": [
     "static/css/main.092804f3.css",
-    "static/js/main.40310972.js"
+    "static/js/main.3c465c87.js"
   ]
 }
