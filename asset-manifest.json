@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.092804f3.css",
-    "main.js": "/static/js/main.3347eb61.js",
+    "main.js": "/static/js/main.20e4283a.js",
     "static/media/Home Page.png": "/static/media/Home Page.bd58fd95e81a4f69fdac.png",
     "static/media/Tech School Home Page.png": "/static/media/Tech School Home Page.01bc420da5292518f09b.png",
     "static/media/profilepic.png": "/static/media/profilepic.9a97d991dcb5c68f2d71.png",
     "static/media/Dashboard Page.png": "/static/media/Dashboard Page.376f637e22b740797ba1.png",
     "static/media/Vercel.png": "/static/media/Vercel.fd61b9b83d69243486a9.png",
     "static/media/cypress.png": "/static/media/cypress.3ec6291e292175954557.png",
-    "static/media/3.webp": "/static/media/3.18e2d925f89936f406e1.webp",
-    "static/media/2.webp": "/static/media/2.9fba8650506e65a16def.webp",
+    "static/media/logo.webp": "/static/media/logo.aa33e7de9b8d08846f62.webp",
     "index.html": "/index.html",
     "main.092804f3.css.map": "/static/css/main.092804f3.css.map",
-    "main.3347eb61.js.map": "/static/js/main.3347eb61.js.map"
+    "main.20e4283a.js.map": "/static/js/main.20e4283a.js.map"
   },
   "entrypoints": [
     "static/css/main.092804f3.css",
-    "static/js/main.3347eb61.js"
+    "static/js/main.20e4283a.js"
   ]
 }
