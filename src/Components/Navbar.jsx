@@ -48,7 +48,7 @@ const Navbar = () => {
             <Spacer />
             <IconButton mr={"10px"} icon={theme === "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme === "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
 
-            <a href={resume} id="resume-link-1" className="nav-link resume" download={"ParasKamaliya_Resume.pdf"} target="_blank" rel="noreferrer">
+            <a href={resume} id="resume-link-1" className="nav-link resume" target="_blank" rel="noreferrer">
                 <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1" >RESUME</Button>
             </a>
             <IconButton
@@ -88,8 +88,8 @@ const Navbar = () => {
 
                         <Link activeClass="active" className="nav-link contact" to="contact" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} spy={true} smooth={true} offset={-120} duration={500} onClick={onClose}>Contact</Link>
 
-                        <a href={"./ParasKamaliya_Resume.pdf"} target="_blank" rel="noreferrer" id="resume-link-1">
-                            <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1" className="nav-link resume" >Resume</Button>
+                        <a href={"./ParasKamaliya_Resume.pdf"} target="_blank" rel="noreferrer" >
+                            <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} >Resume</Button>
                         </a>
                     </VStack>
                 </DrawerBody>
