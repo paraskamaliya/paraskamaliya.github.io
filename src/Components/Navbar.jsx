@@ -7,11 +7,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { TOGGLE } from "../Redux/actionType";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons"
 import { useRef } from "react";
+import resume from "../assets/ParasKamaliya_Resume.pdf";
 const Navbar = () => {
     const theme = useSelector(store => store.theme)
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
     const dispatch = useDispatch();
+    function downloadAndOpenResume(e) {
+        const a = document.createElement("a");
+        a.href = resume;
+        a.download = "ParasKamaliya_Resume.pdf";
+        a.click();
+    }
     return <Box w={"100%"} backgroundColor={theme === "dark" ? "black" : "white"} color={theme === "dark" ? "white" : "black"} id="nav-menu" position={"sticky"} top={"0"} zIndex={"100"}>
         <Box display={"flex"} flexDirection={["row"]} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"}>
             <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>
@@ -47,8 +54,8 @@ const Navbar = () => {
             <Spacer />
             <IconButton mr={"10px"} icon={theme === "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme === "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
 
-            <a href={"ParasKamaliya_Resume.pdf"} id="resume-link-1" download className="nav-link resume">
-                <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1">RESUME</Button>
+            <a href={resume} id="resume-link-1" className="nav-link resume" target="_blank" rel="noreferrer">
+                <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1" onClick={(e) => downloadAndOpenResume(e)}>RESUME</Button>
             </a>
             <IconButton
                 display={{ base: 'inline-flex', md: 'none' }}
