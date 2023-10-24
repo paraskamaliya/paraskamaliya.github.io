@@ -13,7 +13,7 @@ const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
     const dispatch = useDispatch();
-    function downloadAndOpenResume() {
+    function downloadAndOpenResume(e) {
         const a = document.createElement("a");
         a.href = resume;
         a.download = "Rahul-Chaudhari-Resume.pdf";
@@ -55,7 +55,7 @@ const Navbar = () => {
             <IconButton mr={"10px"} icon={theme === "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme === "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
 
             <a href={resume} id="resume-link-1" className="nav-link resume" target="_blank" rel="noreferrer">
-                <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1" onClick={downloadAndOpenResume} >RESUME</Button>
+                <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1" onClick={(e) => downloadAndOpenResume(e)} >RESUME</Button>
             </a>
             <IconButton
                 display={{ base: 'inline-flex', md: 'none' }}
