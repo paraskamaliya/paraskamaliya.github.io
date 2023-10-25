@@ -16,7 +16,7 @@ const Navbar = () => {
     return <Box w={"100%"} backgroundColor={theme === "dark" ? "black" : "white"} color={theme === "dark" ? "white" : "black"} id="nav-menu" position={"sticky"} top={"0"} zIndex={"100"}>
         <Box display={"flex"} flexDirection={["row"]} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"}>
             <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>
-                <Image src={theme === "dark" ? light : dark} alt="LOGO" objectFit={"cover"} transition={"opacity 0.5s ease"} boxSize={"100px"} id="homeimg" m={"10px"} />
+                <Image src={theme === "dark" ? light : dark} alt="LOGO" objectFit={"cover"} transition={"opacity 0.5s ease"} boxSize={["70px", "70px", "100px", "100px", "100px"]} id="homeimg" m={"10px"} />
             </Link>
             <Spacer />
             <HStack display={{ base: 'none', md: 'flex' }}>
@@ -48,7 +48,6 @@ const Navbar = () => {
             <Spacer />
             <IconButton mr={"10px"} icon={theme === "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme === "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
 
-            {/* <a href={resume} id="resume-link-1" className="nav-link resume" target="_blank" rel="noreferrer"> */}
             <ChakraLink
                 className="nav-link resume"
                 href={resume}
@@ -68,7 +67,6 @@ const Navbar = () => {
             >
                 <Button display={{ base: 'none', md: 'flex' }} id="resume-button-1" rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} >RESUME</Button>
             </ChakraLink>
-            {/* </a> */}
             <IconButton
                 display={{ base: 'inline-flex', md: 'none' }}
                 ref={btnRef}
@@ -106,9 +104,24 @@ const Navbar = () => {
 
                         <Link activeClass="active" className="nav-link contact" to="contact" style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} spy={true} smooth={true} offset={-120} duration={500} onClick={onClose}>Contact</Link>
 
-                        <a href={"./ParasKamaliya_Resume.pdf"} target="_blank" rel="noreferrer" >
-                            <Button rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} >Resume</Button>
-                        </a>
+                        <ChakraLink
+                            href={resume}
+                            download={"ParasKamaliya_Resume.pdf"}
+                            style={{
+                                textDecoration: "none",
+                            }}
+                            target="_blank"
+                            textAlign="center"
+                            onClick={() => {
+                                window.open(
+                                    "https://drive.google.com/file/d/1a79_bKFSag1TB4vbKTZw7LUTLniwanox/view?usp=sharing",
+                                    "_blank",
+                                    "noreferrer"
+                                );
+                            }}
+                        >
+                            <Button display={{ base: 'none', md: 'flex' }} id="resume-button-1" rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} >RESUME</Button>
+                        </ChakraLink>
                     </VStack>
                 </DrawerBody>
             </DrawerContent>
