@@ -1,6 +1,6 @@
 import dark from "../dark.webp";
 import light from "../light.webp"
-import { Box, Image, HStack, Button, Spacer, IconButton, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, VStack } from "@chakra-ui/react";
+import { Box, Image, HStack, Button, Spacer, IconButton, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, VStack, Link as ChakraLink } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import { ExternalLinkIcon, HamburgerIcon } from "@chakra-ui/icons"
 import { useDispatch, useSelector } from "react-redux";
@@ -48,9 +48,27 @@ const Navbar = () => {
             <Spacer />
             <IconButton mr={"10px"} icon={theme === "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme === "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
 
-            <a href={resume} id="resume-link-1" className="nav-link resume" target="_blank" rel="noreferrer">
-                <Button display={{ base: 'none', md: 'flex' }} rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} id="resume-button-1" >RESUME</Button>
-            </a>
+            {/* <a href={resume} id="resume-link-1" className="nav-link resume" target="_blank" rel="noreferrer"> */}
+            <ChakraLink
+                className="nav-link resume"
+                href={resume}
+                download={"ParasKamaliya_Resume.pdf"}
+                style={{
+                    textDecoration: "none",
+                }}
+                target="_blank"
+                textAlign="center"
+                onClick={() => {
+                    window.open(
+                        "https://drive.google.com/file/d/1a79_bKFSag1TB4vbKTZw7LUTLniwanox/view?usp=sharing",
+                        "_blank",
+                        "noreferrer"
+                    );
+                }}
+            >
+                <Button display={{ base: 'none', md: 'flex' }} id="resume-button-1" rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} >RESUME</Button>
+            </ChakraLink>
+            {/* </a> */}
             <IconButton
                 display={{ base: 'inline-flex', md: 'none' }}
                 ref={btnRef}
