@@ -20,6 +20,7 @@ const Intro = () => {
                             textDecoration: "none"
                         }}
                         target="_blank"
+                        id="resume-link-2"
                         textAlign="center"
                         onClick={() => {
                             window.open(

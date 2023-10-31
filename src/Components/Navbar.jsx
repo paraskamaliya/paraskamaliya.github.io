@@ -111,6 +111,7 @@ const Navbar = () => {
                                 textDecoration: "none",
                             }}
                             target="_blank"
+                            id="resume-link-1"
                             textAlign="center"
                             onClick={() => {
                                 window.open(
