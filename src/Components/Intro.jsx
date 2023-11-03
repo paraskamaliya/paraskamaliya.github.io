@@ -16,7 +16,7 @@ const Intro = () => {
                     <Button rightIcon={<DownloadIcon />} id="resume-button-2" bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} >
                         <Link
                             href={resume}
-                            download={"ParasKamaliya_Resume.pdf"}
+                            // download={"ParasKamaliya_Resume.pdf"}
                             style={{
                                 textDecoration: "none"
                             }}
