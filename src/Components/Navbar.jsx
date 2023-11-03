@@ -48,10 +48,10 @@ const Navbar = () => {
             <Spacer />
             <IconButton mr={"10px"} icon={theme === "dark" ? <SunIcon color={"black"} /> : <MoonIcon color={"white"} />} fontSize={"2xl"} w={"40px"} h={"40px"} onClick={() => dispatch({ type: TOGGLE })} brightness={100} alt="theme" bg={theme === "dark" ? "white" : "black"} _hover={{ color: "none" }} aria-label="darkmode" />
 
-            {/* <ChakraLink
+            <ChakraLink
                 className="nav-link resume"
                 href={resume}
-                download={"ParasKamaliya_Resume.pdf"}
+                // download={"ParasKamaliya_Resume.pdf"}
                 style={{
                     textDecoration: "none",
                 }}
@@ -59,15 +59,15 @@ const Navbar = () => {
                 textAlign="center"
                 onClick={() => {
                     window.open(
-                        "https://drive.google.com/file/d/1a79_bKFSag1TB4vbKTZw7LUTLniwanox/view?usp=sharing",
+                        "https://drive.google.com/u/0/uc?id=1a79_bKFSag1TB4vbKTZw7LUTLniwanox&export=download",
                         "_blank",
                         "noreferrer"
                     );
                 }}
             >
                 <Button display={{ base: 'none', md: 'flex' }} id="resume-button-1" rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} >RESUME</Button>
-            </ChakraLink> */}
-            <a
+            </ChakraLink>
+            {/* <a
                 href="https://drive.google.com/u/0/uc?id=1a79_bKFSag1TB4vbKTZw7LUTLniwanox&export=download"
                 rel="noreferrer"
                 class="nav-link resume"
@@ -75,9 +75,8 @@ const Navbar = () => {
                 download
             >
                 <button id="resume-button-1">
-                    <i class="fa fa-download" id='download'></i>
                     RESUME
-                </button></a>
+                </button></a> */}
             <IconButton
                 display={{ base: 'inline-flex', md: 'none' }}
                 ref={btnRef}
