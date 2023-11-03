@@ -13,7 +13,7 @@ const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
     const dispatch = useDispatch();
-    return <Box w={"100%"} backgroundColor={theme === "dark" ? "black" : "white"} color={theme === "dark" ? "white" : "black"} id="nav-menu" position={"sticky"} top={"0"} zIndex={"100"}>
+    return <Box w={"100%"} backgroundColor={theme === "dark" ? "#2c2c2c" : "#efefef"} color={theme === "dark" ? "white" : "black"} id="nav-menu" position={"sticky"} top={"0"} zIndex={"100"}>
         <Box display={"flex"} flexDirection={["row"]} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"}>
             <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>
                 <Image src={theme === "dark" ? light : dark} alt="LOGO" objectFit={"cover"} transition={"opacity 0.5s ease"} boxSize={["70px", "70px", "100px", "100px", "100px"]} id="homeimg" m={"10px"} />
@@ -89,7 +89,7 @@ const Navbar = () => {
             variant={"outline"}
         >
             <DrawerOverlay />
-            <DrawerContent bg={theme === "dark" ? "black" : "white"}>
+            <DrawerContent bg={theme === "dark" ? "#2c2c2c" : "#efefef"}>
                 <DrawerCloseButton color={theme === "dark" ? "white" : "black"} />
                 <DrawerHeader color={theme === "dark" ? "white" : "black"} borderBottomWidth="1px" borderBottomColor={theme === "dark" ? "white" : "black"}>Menu</DrawerHeader>
                 <DrawerBody>
