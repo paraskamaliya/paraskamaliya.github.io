@@ -13,25 +13,27 @@ const Intro = () => {
                     <Heading textAlign={"left"} fontSize={["2.5rem", "2.5rem", "4rem", "4rem", "4rem"]}>I'm <span style={{ color: "#4A90E2" }} id="user-detail-name">Paras</span></Heading>
                     <Heading textAlign={"left"} fontSize={["2.5rem", "2.5rem", "3.5rem", "3.5rem", "3.5rem"]} >Full Stack Web Developer</Heading>
                     <Text textAlign={"left"} fontSize={["1rem", "1rem", "1.2rem", "1.2rem", "1.2rem"]} fontWeight={300} >Skilled Full stack Web developer and experienced <br /> in creating User freindly Interface websites.</Text>
-                    <Link
-                        href={resume}
-                        download={"ParasKamaliya_Resume.pdf"}
-                        style={{
-                            textDecoration: "none"
-                        }}
-                        target="_blank"
-                        id="resume-link-2"
-                        textAlign="center"
-                        onClick={() => {
-                            window.open(
-                                "https://drive.google.com/file/d/1a79_bKFSag1TB4vbKTZw7LUTLniwanox/view?usp=sharing",
-                                "_blank",
-                                "noreferrer"
-                            );
-                        }}
-                    >
-                        <Button rightIcon={<DownloadIcon />} id="resume-button-2" bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} >Resume</Button>
-                    </Link>
+                    <Button rightIcon={<DownloadIcon />} id="resume-button-2" bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} >
+                        <Link
+                            href={resume}
+                            download={"ParasKamaliya_Resume.pdf"}
+                            style={{
+                                textDecoration: "none"
+                            }}
+                            target="_blank"
+                            id="resume-link-2"
+                            textAlign="center"
+                            onClick={() => {
+                                window.open(
+                                    "https://drive.google.com/file/d/1a79_bKFSag1TB4vbKTZw7LUTLniwanox/view?usp=sharing",
+                                    "_blank",
+                                    "noreferrer"
+                                );
+                            }}
+                        >
+                            Resume
+                        </Link>
+                    </Button>
                 </Box>
                 <Box w={["100%", "85%", "70%", "50%", "50%"]} m={"auto"} position={"sticky"} h={"100%"} alignItems={"flex-end"}>
                     <Image src={ProfilePic} m={"auto"} objectFit={"cover"} className="home-img" alt="profilepic" flex={1} />
