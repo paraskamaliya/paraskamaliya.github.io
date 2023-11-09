@@ -14,17 +14,16 @@ const ArtSphere = () => {
             <Heading fontSize={"5xl"} className="project-title">ArtSphere</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description">ArtSphere, where your creativity takes center stage. <span style={{ color: "#4A90E2" }}>Share your art with editing, engage with comments, and enhance images with our stylish dark mode.</span> Connect with fellow artists and enthusiasts in this vibrant community. It's not just an art gallery; it's a place to collaborate and celebrate artistic expression.</Text>
             <Grid className="project-tech-stack" templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} gap={"10px"}>
-                <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"black"} w={"fit-content"} color={"white"}>Express JS</Button></GridItem>
-                <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#3cff15"} w={"fit-content"} >MongoDB</Button></GridItem>
-                <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#870000"} w={"fit-content"} color={"white"}>Mongoose</Button></GridItem>
-                <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="red" color={"black"} w={"100%"}>HTML</Button></GridItem>
-                <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="blue" color={"black"} w={"100%"}>CSS</Button></GridItem>
-                <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="yellow" color={"black"} w={"100%"}>JavaScript</Button></GridItem>
-                <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg="#65B0BA" w={"100%"}>React.Js</Button></GridItem>
-                <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="purple" w={"100%"}>Redux</Button></GridItem>
-                <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#4DB6AC"} w={"fit-content"}>Chakra UI</Button></GridItem>
-                <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"black"} w={"fit-content"} color={"white"}>Styled Components</Button></GridItem>
-                <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#FFCC30"} color={"black"} w={"100%"}>Firebase</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"black"} w={"100%"} color={"white"}>Express JS</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#3cff15"} w={"100%"} >MongoDB</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#870000"} w={"100%"} color={"white"}>Mongoose</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="red" color={"black"} w={"100%"}>HTML</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="blue" color={"black"} w={"100%"}>CSS</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="yellow" color={"black"} w={"100%"}>JavaScript</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg="#65B0BA" w={"100%"}>React.Js</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="purple" w={"100%"}>Redux</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#4DB6AC"} w={"100%"}>Chakra UI</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#FFCC30"} color={"black"} w={"100%"}>Firebase</Button></GridItem>
             </Grid>
             <Stack direction={"row"} justifyContent={["center", "center", "left", "left", "left"]}>
                 <Link href='https://github.com/paraskamaliya/festive-crayon-1023' isExternal className="project-github-link">
