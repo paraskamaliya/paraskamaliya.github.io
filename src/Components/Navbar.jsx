@@ -6,13 +6,31 @@ import { ExternalLinkIcon, HamburgerIcon } from "@chakra-ui/icons"
 import { useDispatch, useSelector } from "react-redux";
 import { TOGGLE } from "../Redux/actionType";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons"
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import resume from "../assets/ParasKamaliya_Resume.pdf";
 const Navbar = () => {
     const theme = useSelector(store => store.theme)
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
     const dispatch = useDispatch();
+    const counter = () => {
+        const payload = {
+            counter: 1
+        }
+        fetch("https://counter-iypu.onrender.com/add", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        })
+            .then((res) => res.json())
+            .then((res) => console.log(res))
+            .catch((err) => console.log(err))
+    }
+    useEffect(() => {
+        counter();
+    }, [])
     return <Box w={"100%"} backgroundColor={theme === "dark" ? "#2c2c2c" : "#efefef"} color={theme === "dark" ? "white" : "black"} id="nav-menu" position={"sticky"} top={"0"} zIndex={"100"}>
         <Box display={"flex"} flexDirection={["row"]} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"}>
             <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>
