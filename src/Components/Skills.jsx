@@ -31,7 +31,7 @@ const Skills = () => {
             <Box w={"100%"} direction={"row"} justifyContent={"center"} >
                 <Heading textAlign={"center"} fontSize={"3xl"} mt={5} >Tech Stacks</Heading>
 
-                <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(5,1fr)"]} fontSize={["xl", "xl", "2xl", "2xl", "2xl"]} textAlign={"center"} gap={"7"} border={theme === "dark" ? "1px solid white" : "1px solid black"} borderRadius={10} templateRows={"auto"} justifyItems={"center"}>
+                <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(5,1fr)"]} fontSize={["xl", "xl", "2xl", "2xl", "2xl"]} textAlign={"center"} gap={"7"} border={theme === "dark" ? "1px solid white" : "1px solid black"} borderRadius={10} templateRows={"auto"} justifyItems={"center"} p={"3px"}>
                     <GridItem className="skills-card" >
                         <Image src={html} objectFit="cover" w={"50%"} m={"auto"} alt="html" className="skills-card-img" />
                         <Text className="skills-card-name">HTML</Text>
