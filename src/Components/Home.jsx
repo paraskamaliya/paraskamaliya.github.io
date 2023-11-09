@@ -19,7 +19,7 @@ const Home = () => {
                         style={{
                             textDecoration: "none"
                         }}
-                        href="https://drive.google.com/u/0/uc?id=1a79_bKFSag1TB4vbKTZw7LUTLniwanox&export=download"
+                        href="https://drive.google.com/u/0/uc?id=1KiDHjcKQ_rCmma8uyRaaFK34oXXdwbDL&export=download"
                         target="_blank"
                         id="resume-link-2"
                         download
