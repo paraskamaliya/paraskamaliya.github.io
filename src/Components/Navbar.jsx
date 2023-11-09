@@ -24,6 +24,7 @@ const Navbar = () => {
             },
             body: JSON.stringify(payload)
         })
+            .then((res) => res.json())
             .then((res) => console.log(res))
             .catch((err) => console.log(err))
     }
