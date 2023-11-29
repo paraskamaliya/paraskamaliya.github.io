@@ -68,7 +68,7 @@ const Navbar = () => {
 
             <a
                 className="nav-link resume"
-                href={"https://drive.google.com/u/0/uc?id=1KiDHjcKQ_rCmma8uyRaaFK34oXXdwbDL&export=download"}
+                href={"https://drive.google.com/u/0/uc?id=1wW3lm1QAf5BX_lBZOnUNr2r3LF7bh-F6&export=download"}
                 // download={"ParasKamaliya_Resume.pdf"}
                 style={{
                     textDecoration: "none",
