@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 const Connect = () => {
     const theme = useSelector(store => store.theme)
-    return <Stack display={"flex"} flexDirection={["column", "column", "row", "row", "row"]} gap={"20px"} padding={"20px"} alignContent={"center"} alignItems={"center"} className="project-card">
+    return <Stack display={"flex"} flexDirection={["column", "column", "row", "row", "row"]} gap={"20px"} padding={"20px"} alignContent={"center"} alignItems={"center"} className="project-card" boxShadow={"lg"} borderRadius={"15px"} m={2}>
         <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"}>
             <Image src={homePage} border={"1px solid black"} cursor={"pointer"} alt="connect" />
         </Box>
