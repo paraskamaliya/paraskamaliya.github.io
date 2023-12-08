@@ -6,13 +6,8 @@ import resume from "../assets/ParasKamaliya_Resume.pdf";
 const Home = () => {
     const theme = useSelector(store => store.theme);
     function downloadAndOpenResume(event) {
-        const a = document.createElement("a");
-        a.href = resume;
-        a.target = "_blank"
-        a.click();
         window.open(
-            "https://drive.google.com/file/d/1NLvNhrF6kMmh9VDnCRDDsCGhFZaVEnmN/view?usp=sharing",
-            "_blank"
+            "https://drive.google.com/file/d/1NLvNhrF6kMmh9VDnCRDDsCGhFZaVEnmN/view?usp=sharing"
         );
     }
     return <Box bg={theme === "dark" ? "#2c2c2c" : "#efefef"} color={theme === "dark" ? "white" : "black"} w={"100%"} id="home" >

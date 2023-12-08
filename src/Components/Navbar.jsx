@@ -23,13 +23,8 @@ const Navbar = () => {
     }
 
     function downloadAndOpenResume(event) {
-        const a = document.createElement("a");
-        a.href = resume;
-        a.target = "_blank"
-        a.click();
         window.open(
-            "https://drive.google.com/file/d/1NLvNhrF6kMmh9VDnCRDDsCGhFZaVEnmN/view?usp=sharing",
-            "_blank"
+            "https://drive.google.com/file/d/1NLvNhrF6kMmh9VDnCRDDsCGhFZaVEnmN/view?usp=sharing"
         );
     }
 
