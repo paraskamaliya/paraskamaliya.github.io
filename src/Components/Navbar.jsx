@@ -22,7 +22,7 @@ const Navbar = () => {
         })
     }
 
-    function downloadAndOpenResume(event) {
+    function downloadAndOpenResume() {
         window.open(
             "https://drive.google.com/file/d/1NLvNhrF6kMmh9VDnCRDDsCGhFZaVEnmN/view?usp=sharing"
         );

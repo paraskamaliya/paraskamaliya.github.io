@@ -5,7 +5,7 @@ import { DownloadIcon } from "@chakra-ui/icons";
 import resume from "../assets/ParasKamaliya_Resume.pdf";
 const Home = () => {
     const theme = useSelector(store => store.theme);
-    function downloadAndOpenResume(event) {
+    function downloadAndOpenResume() {
         window.open(
             "https://drive.google.com/file/d/1NLvNhrF6kMmh9VDnCRDDsCGhFZaVEnmN/view?usp=sharing"
         );
@@ -19,7 +19,7 @@ const Home = () => {
                     <Heading textAlign={"left"} fontSize={["2.5rem", "2.5rem", "3.5rem", "3.5rem", "3.5rem"]} >Full Stack Web Developer</Heading>
                     <Text textAlign={"left"} fontSize={["1rem", "1rem", "1.2rem", "1.2rem", "1.2rem"]} fontWeight={300} >Skilled Full stack Web developer and experienced <br /> in creating User freindly Interface websites.</Text>
                     <a
-                        href={resume}
+                        href={"https://drive.google.com/uc?export=download&id=1NLvNhrF6kMmh9VDnCRDDsCGhFZaVEnmN"}
                         download={"ParasKamaliya_Resume.pdf"}
                         style={{
                             textDecoration: "none",
