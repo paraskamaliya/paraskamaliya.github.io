@@ -14,8 +14,8 @@ const EPlant = () => {
             <Heading fontSize={"5xl"} className="project-title">E-Plant</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description">E-Plant is an innovative e-commerce platform dedicated to the beauty of nature, offering a wide variety of plants. With both <span style={{ color: "#4A90E2" }}>user and admin interfaces</span>, it seamlessly blends functionality with an <span style={{ color: "#4A90E2" }}>appealing UI</span>. Explore the world of greenery while keeping track of your <span style={{ color: "#4A90E2" }}>recent visits</span> to your favorite plants.</Text>
             <Grid className="project-tech-stack" templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} gap={"10px"}>
-                <GridItem> <Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="red" color={"black"} w={"100%"} className="project-tech-stack">HTML</Button></GridItem>
-                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="blue" color={"black"} w={"100%"}>CSS</Button></GridItem>
+                <GridItem> <Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="red" w={"100%"} className="project-tech-stack">HTML</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="blue" w={"100%"}>CSS</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="yellow" color={"black"} w={"100%"}>JavaScript</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg="#65B0BA" w={"100%"}>React.Js</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#4DB6AC"} w={"100%"}>Chakra UI</Button></GridItem>

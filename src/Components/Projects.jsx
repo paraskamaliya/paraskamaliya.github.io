@@ -5,6 +5,7 @@ import PaintKu from "../Project Component/PaintKu";
 import { useSelector } from "react-redux";
 import TechSchool from "../Project Component/TechSchool";
 import ArtSphere from "../Project Component/ArtSphere";
+import TutorAI from "../Project Component/TutorAI";
 
 const Projects = () => {
     const theme = useSelector(store => store.theme);
@@ -12,6 +13,7 @@ const Projects = () => {
         <Box w={"90%"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"} pb={"1rem"} m={"auto"}>
             <Box w={"100%"} m={"auto"} pt={"1rem"} >
                 <Heading textAlign={"center"} color={"#4A90E2"} textDecoration={"underline"} textDecorationColor={"#4A90E2"}>Projects</Heading>
+                <TutorAI />
                 <ArtSphere />
                 <EPlant />
                 <Connect />

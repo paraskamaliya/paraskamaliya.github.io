@@ -14,8 +14,8 @@ const Connect = () => {
             <Heading fontSize={"5xl"} className="project-title">Connect</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description" >Step into the future of efficient management with 'Connect.' This dynamic website unites <span style={{ color: "#4A90E2" }}>students, managers, and administrators</span>, empowering them with tailored interfaces for seamless collaboration. Immerse yourself in a sleek, user-friendly environment with the added charm of a customizable <span style={{ color: "#4A90E2" }}>dark mode</span>. Engage in vibrant <span style={{ color: "#4A90E2" }}>discussions</span> and stay informed with the <span style={{ color: "#4A90E2" }}>latest announcements</span>. 'Connect' - where functionality meets elegance, making management an absolute pleasure.</Text>
             <Grid templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(4,1fr)"]} templateRows={"auto"} gap={"10px"} className="project-tech-stack" >
-                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="red" color={"black"} w={"100%"}>HTML</Button></GridItem>
-                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="blue" color={"black"} w={"100%"} >CSS</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="red" w={"100%"}>HTML</Button></GridItem>
+                <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="blue" w={"100%"} >CSS</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="yellow" color={"black"} w={"100%"} >JavaScript</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} colorScheme="cyan" color={"black"} w={"100%"}>SmtpJs</Button></GridItem>
             </Grid>

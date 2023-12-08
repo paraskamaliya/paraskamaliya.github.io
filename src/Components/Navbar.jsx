@@ -13,31 +13,36 @@ const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
     const dispatch = useDispatch();
-    const counter = () => {
-        const payload = {
-            counter: 1
-        }
-        fetch("https://counter-iypu.onrender.com/add", {
+    const counter = async () => {
+        await fetch("https://counter-iypu.onrender.com/add", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
-            },
-            body: JSON.stringify(payload)
+            }
         })
-            .then((res) => res.json())
-            .then((res) => console.log(res))
-            .catch((err) => console.log(err))
     }
+
+    function downloadAndOpenResume(event) {
+        const a = document.createElement("a");
+        a.href = resume;
+        a.target = "_blank"
+        a.click();
+        window.open(
+            "https://drive.google.com/file/d/1FsflU4hXrhkd-NWHDeabgvninWTB95fY/view?usp=sharing",
+            "_blank"
+        );
+    }
+
     useEffect(() => {
         counter();
     }, [])
     return <Box w={"100%"} backgroundColor={theme === "dark" ? "#2c2c2c" : "#efefef"} color={theme === "dark" ? "white" : "black"} id="nav-menu" position={"sticky"} top={"0"} zIndex={"100"}>
         <Box display={"flex"} flexDirection={["row"]} w={"90%"} m={"auto"} color={"white"} justifyContent={"center"} alignItems={"center"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"}>
-            <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }}>
+            <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} style={{ color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer" }} >
                 <Image src={theme === "dark" ? light : dark} alt="LOGO" objectFit={"cover"} transition={"opacity 0.5s ease"} boxSize={["70px", "70px", "100px", "100px", "100px"]} id="homeimg" m={"10px"} />
             </Link>
             <Spacer />
-            <HStack display={{ base: 'none', md: 'flex' }}>
+            <HStack display={{ base: 'none', md: 'flex' }} w={"50%"} justifyContent={"space-evenly"}>
                 <Link activeClass="active" to="home" spy={true} smooth={true} offset={-115} duration={500} className="nav-link home" style={{
                     color: theme === "dark" ? "white" : "black", fontSize: "20px", cursor: "pointer", transition: "color 0.3s"
                 }} onMouseEnter={(e) => (e.target.style.color = "#4A90E2")} onMouseLeave={(e) => (e.target.style.color = theme === "dark" ? "white" : "black")
@@ -68,36 +73,18 @@ const Navbar = () => {
 
             <a
                 className="nav-link resume"
-                href={"https://drive.google.com/u/0/uc?id=1UQQJHoC7oWOLZmJ2kJr6OPeQEA7mlkuI&export=download"}
-                // download={"ParasKamaliya_Resume.pdf"}
+                href={resume}
+                download={"ParasKamaliya_Resume.pdf"}
                 style={{
                     textDecoration: "none",
                     textAlign: "center"
                 }}
-                download
                 id="resume-link-1"
                 rel="noreferrer"
                 target="_blank"
-            // onClick={() => {
-            //     window.open(
-            //         "https://drive.google.com/u/0/uc?id=1a79_bKFSag1TB4vbKTZw7LUTLniwanox&export=download",
-            //         "_blank",
-            //         "noreferrer"
-            //     );
-            // }}
             >
-                <Button display={{ base: 'none', md: 'flex' }} id="resume-button-1" rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} >RESUME</Button>
+                <Button display={{ base: 'none', md: 'flex' }} id="resume-button-1" rightIcon={<ExternalLinkIcon />} bg={theme === "dark" ? "white" : "black"} color={theme === "dark" ? "black" : "white"} _hover={{ color: "none" }} onClick={downloadAndOpenResume}>RESUME</Button>
             </a>
-            {/* <a
-                href="https://drive.google.com/u/0/uc?id=1a79_bKFSag1TB4vbKTZw7LUTLniwanox&export=download"
-                rel="noreferrer"
-                class="nav-link resume"
-                id="resume-link-1"
-                download
-            >
-                <button id="resume-button-1">
-                    RESUME
-                </button></a> */}
             <IconButton
                 display={{ base: 'inline-flex', md: 'none' }}
                 ref={btnRef}

@@ -108,7 +108,7 @@ const Skills = () => {
                         </GridItem>
                     </Grid>
                 </Box>
-                <Box m={"auto"} textAlign={"center"} border={"1px"} borderRadius={"10"} mt={"40px"}>
+                <Box m={"auto"} textAlign={"center"} border={"1px"} borderRadius={"10"} mt={"50px"}>
                     <Heading fontSize={"3xl"} fontWeight={400} mb={"5px"} m={"auto"} mt={"7px"} w={"90%"} borderBottom={"1px"}>Toolsets</Heading>
                     <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(6,1fr)"]} m={"auto"} textAlign={"center"} templateRows={"auto"} w={"100%"} mt={"5px"} fontSize={["xl", "xl", "2xl", "2xl", "2xl"]} gap={"7"}>
                         <GridItem className="skills-card" w={"100%"} m={"auto"} >
