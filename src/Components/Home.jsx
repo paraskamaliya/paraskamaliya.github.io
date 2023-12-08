@@ -19,7 +19,7 @@ const Home = () => {
                     <Heading textAlign={"left"} fontSize={["2.5rem", "2.5rem", "3.5rem", "3.5rem", "3.5rem"]} >Full Stack Web Developer</Heading>
                     <Text textAlign={"left"} fontSize={["1rem", "1rem", "1.2rem", "1.2rem", "1.2rem"]} fontWeight={300} >Skilled Full stack Web developer and experienced <br /> in creating User freindly Interface websites.</Text>
                     <a
-                        href={"https://drive.google.com/uc?export=download&id=1NLvNhrF6kMmh9VDnCRDDsCGhFZaVEnmN"}
+                        href={resume}
                         download={"ParasKamaliya_Resume.pdf"}
                         style={{
                             textDecoration: "none",
