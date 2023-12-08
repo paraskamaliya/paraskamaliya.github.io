@@ -31,7 +31,7 @@ const ArtSphere = () => {
                         bg: theme === "dark" ? "white" : "black", transform: 'scale(0.90)', borderColor: '#000000'
                     }}>Github</Button>
                 </Link>
-                <Link href='https://festive-crayon-1023-one.vercel.app/' isExternal className="project-deployed-link">
+                <Link href='https://artsphere-eight.vercel.app/' isExternal className="project-deployed-link">
                     <Button mt={"15px"} backgroundColor="black" color={"white"} w={"100%"} _hover={{ colorScheme: "#426800" }} rightIcon={<ExternalLinkIcon />} border={"1px solid white"} _active={{
                         transform: 'scale(0.90)', borderColor: '#000000'
                     }}>Live Demo</Button>
