@@ -28,7 +28,7 @@ const Navbar = () => {
         a.target = "_blank"
         a.click();
         window.open(
-            "https://drive.google.com/file/d/1FsflU4hXrhkd-NWHDeabgvninWTB95fY/view?usp=sharing",
+            "https://drive.google.com/file/d/1NLvNhrF6kMmh9VDnCRDDsCGhFZaVEnmN/view?usp=sharing",
             "_blank"
         );
     }
