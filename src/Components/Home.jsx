@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Image, Link, Stack, Text } from "@chakra-ui/react"
+import { Box, Button, Heading, Image, Stack, Text } from "@chakra-ui/react"
 import ProfilePic from "../Photos/profilepic.png"
 import { useSelector } from "react-redux";
 import { DownloadIcon } from "@chakra-ui/icons";
@@ -20,7 +20,7 @@ const Home = () => {
                     <Text textAlign={"left"} fontSize={["1rem", "1rem", "1.2rem", "1.2rem", "1.2rem"]} fontWeight={300} >Skilled Full stack Web developer and experienced <br /> in creating User freindly Interface websites.</Text>
                     <a
                         href={resume}
-                        download={"ParasKamaliya_Resume.pdf"}
+                        download={"Paras-Kamaliya-Resume.pdf"}
                         style={{
                             textDecoration: "none",
                             textAlign: "center"

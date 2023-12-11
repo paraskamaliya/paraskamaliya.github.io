@@ -69,7 +69,7 @@ const Navbar = () => {
             <a
                 className="nav-link resume"
                 href={resume}
-                download={"ParasKamaliya_Resume.pdf"}
+                download={"Paras-Kamaliya-Resume.pdf"}
                 style={{
                     textDecoration: "none",
                     textAlign: "center"
