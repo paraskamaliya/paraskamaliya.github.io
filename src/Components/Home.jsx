@@ -2,7 +2,7 @@ import { Box, Button, Heading, Image, Stack, Text } from "@chakra-ui/react"
 import ProfilePic from "../Photos/profilepic.png"
 import { useSelector } from "react-redux";
 import { DownloadIcon } from "@chakra-ui/icons";
-import resume from "../assets/ParasKamaliya_Resume.pdf";
+import resume from "../assets/Paras-Kamaliya-Resume.pdf";
 const Home = () => {
     const theme = useSelector(store => store.theme);
     function downloadAndOpenResume() {

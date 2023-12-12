@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { TOGGLE } from "../Redux/actionType";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons"
 import { useEffect, useRef } from "react";
-import resume from "../assets/ParasKamaliya_Resume.pdf";
+import resume from "../assets/Paras-Kamaliya-Resume.pdf";
 const Navbar = () => {
     const theme = useSelector(store => store.theme)
     const { isOpen, onOpen, onClose } = useDisclosure();
