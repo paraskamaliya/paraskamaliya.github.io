@@ -23,14 +23,14 @@ const Projects = () => {
             <Box border={"1px"} w={"100%"} m={"auto"} borderRadius={"10"} p={"0.5rem"} >
                 <Heading textAlign={"center"} color={"#4A90E2"} >Github Stats</Heading>
                 <Box w={"70%"} m={"auto"}>
-                    {theme === "dark" ? <Image id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=paraskamaliya&layout=donut&langs_count=8&theme=dark" alt="GitHub stats" m={"auto"} /> : <Image id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=paraskamaliya&layout=donut&langs_count=8&theme=white" alt="GitHub stats" m={"auto"} />}
+                    {theme === "dark" ? <Image id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=paraskamaliya&layout=donut&langs_count=8&theme=dark" alt="GitHub stats" m={"auto"} /> : <Image id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=paraskamaliya&layout=donut&langs_count=8&theme=white" alt="GitHub stats" m={"auto"} border={"1px solid black"} />}
                 </Box>
                 <Stack direction={["column", "column", "column", "column", "row"]} w={"70%"} m={"auto"} mt={"5px"} justifyContent={"center"}>
-                    <Image id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=paraskamaliya&show_icons=true&theme=transparent" alt="GitHub stats" />
-                    <Image id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=paraskamaliya&theme=transparent" alt="GitHub Streak" style={{ maxWidth: "100%" }} />
+                    <Image id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=paraskamaliya&show_icons=true&theme=transparent" alt="GitHub stats" border={"1px solid black"} />
+                    <Image id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=paraskamaliya&theme=transparent" alt="GitHub Streak" style={{ maxWidth: "100%" }} border={"1px solid black"} />
                 </Stack>
-                <Box w={"80%"} m={"auto"} className="react-activity-calendar">
-                    <Image src="https://ghchart.rshah.org/006AFF/paraskamaliya" alt="Github Contribution" m={"auto"} />
+                <Box w={"100%"} m={"auto"} className="react-activity-calendar" mt={"5px"} >
+                    <Image src="https://ghchart.rshah.org/006AFF/paraskamaliya" alt="Github Contribution" w={"55%"} p={"1.5"} m={"auto"} border={theme == "dark" ? "1px solid white" : "1px solid black"} />
                 </Box>
             </Box>
         </Box>
