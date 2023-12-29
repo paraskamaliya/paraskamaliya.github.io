@@ -25,7 +25,7 @@ import mongoose from "../assets/mongoose.png"
 import { useSelector } from "react-redux";
 const Skills = () => {
     const theme = useSelector(store => store.theme);
-    return <Box w={"100%"} backgroundColor={theme === "dark" ? "#2c2c2c" : "#efefef"} color={theme === "dark" ? "white" : "black"} id="skills" >
+    return <Box w={"100%"} backgroundColor={theme === "dark" ? "#262626" : "#eaeaea"} color={theme === "dark" ? "white" : "black"} id="skills" >
         <Box w={"90%"} m={"auto"} p={"1rem"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"}>
             <Heading textAlign={"center"} textDecoration={"underline"} color={"#4A90E2"} textDecorationColor={"#4A90E2"}>Skills</Heading>
             <Box w={"100%"} direction={"row"} justifyContent={"center"} >

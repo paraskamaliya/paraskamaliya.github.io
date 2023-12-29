@@ -9,7 +9,7 @@ import TutorAI from "../Project Component/TutorAI";
 
 const Projects = () => {
     const theme = useSelector(store => store.theme);
-    return <Box w={"100%"} backgroundColor={theme === "dark" ? "#2c2c2c" : "#efefef"} color={theme === "dark" ? "white" : "black"} id="projects" >
+    return <Box w={"100%"} backgroundColor={theme === "dark" ? "#262626" : "#eaeaea"} color={theme === "dark" ? "white" : "black"} id="projects" >
         <Box w={"90%"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"} pb={"1rem"} m={"auto"} >
             <Box w={"100%"} m={"auto"} pt={"1rem"} >
                 <Heading textAlign={"center"} color={"#4A90E2"} textDecoration={"underline"} textDecorationColor={"#4A90E2"}>Projects</Heading>
