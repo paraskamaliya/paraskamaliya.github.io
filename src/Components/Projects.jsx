@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import TechSchool from "../Project Component/TechSchool";
 import ArtSphere from "../Project Component/ArtSphere";
 import TutorAI from "../Project Component/TutorAI";
+import AskQuestions from "../Project Component/AskQuestions";
 
 const Projects = () => {
     const theme = useSelector(store => store.theme);
@@ -14,10 +15,11 @@ const Projects = () => {
             <Box w={"100%"} m={"auto"} pt={"1rem"} >
                 <Heading textAlign={"center"} color={"#4A90E2"} textDecoration={"underline"} textDecorationColor={"#4A90E2"}>Projects</Heading>
                 <TutorAI />
+                <AskQuestions />
                 <ArtSphere />
                 <EPlant />
                 <Connect />
-                <PaintKu />
+                {/* <PaintKu /> */}
                 <TechSchool />
             </Box>
             <Box border={"1px"} w={"100%"} m={"auto"} borderRadius={"10"} p={"0.5rem"} >
