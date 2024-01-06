@@ -12,7 +12,7 @@ const TutorAI = () => {
         </Box>
         <Box w={["100%", "100%", "50%", "50%", "50%"]}>
             <Heading fontSize={"5xl"} className="project-title">Tutor AI</Heading>
-            <Text mt={"15px"} mb={"15px"} className="project-description">Tutor-AI, our cutting-edge platform, uses AI and advanced language processing to simulate <span style={{ color: "#4A90E2" }}>real interview scenarios</span>. Users gain valuable feedback to identify strengths and areas for improvement in their interview skills. It's an innovative <span style={{ color: "#4A90E2" }}>self-interview preparation tool</span> powered by artificial intelligence.</Text>
+            <Text mt={"15px"} mb={"15px"} className="project-description">Tutor-AI a Collaborative project, our cutting-edge platform, uses AI and advanced language processing to simulate <span style={{ color: "#4A90E2" }}>real interview scenarios</span>. Users gain valuable feedback to identify strengths and areas for improvement in their interview skills. It's an innovative <span style={{ color: "#4A90E2" }}>self-interview preparation tool</span> powered by artificial intelligence.</Text>
             <Grid className="project-tech-stack" templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} gap={"10px"}>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"black"} w={"100%"} color={"white"}>Express JS</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#3cff15"} w={"100%"} >MongoDB</Button></GridItem>

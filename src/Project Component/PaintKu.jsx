@@ -12,7 +12,7 @@ const PaintKu = () => {
         </Box>
         <Box w={["100%", "100%", "50%", "50%", "50%"]}>
             <Heading fontSize={"5xl"} className="project-title">PaintKu.</Heading>
-            <Text mt={"15px"} mb={"15px"} className="project-description">PaintKu, where art finds its home. Discover a world of exquisite paintings through this innovative e-commerce platform. Browse, select, and acquire stunning artworks while enjoying the convenience of tracking your <span style={{ color: "#4A90E2" }}>recent visits</span>. Welcome to the gallery at your fingertips.</Text>
+            <Text mt={"15px"} mb={"15px"} className="project-description">PaintKu a Collaborative project, where art finds its home. Discover a world of exquisite paintings through this innovative e-commerce platform. Browse, select, and acquire stunning artworks while enjoying the convenience of tracking your <span style={{ color: "#4A90E2" }}>recent visits</span>. Welcome to the gallery at your fingertips.</Text>
             <Grid templateColumns={["repeat(2,2fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(6,1fr)"]} templateRows={"auto"} gap={"10px"} className="project-tech-stack">
                 <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="red" w={"100%"}>HTML</Button></GridItem>
                 <GridItem ><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled colorScheme="blue" w={"100%"}>CSS</Button></GridItem>

@@ -12,7 +12,7 @@ const ArtSphere = () => {
         </Box>
         <Box w={["100%", "100%", "50%", "50%", "50%"]}>
             <Heading fontSize={"5xl"} className="project-title">ArtSphere</Heading>
-            <Text mt={"15px"} mb={"15px"} className="project-description">ArtSphere, where your creativity takes center stage. <span style={{ color: "#4A90E2" }}>Share your art with editing, engage with comments, and enhance images with our stylish dark mode.</span> Connect with fellow artists and enthusiasts in this vibrant community. It's not just an art gallery; it's a place to collaborate and celebrate artistic expression.</Text>
+            <Text mt={"15px"} mb={"15px"} className="project-description">ArtSphere a Collaborative project, where your creativity takes center stage. <span style={{ color: "#4A90E2" }}>Share your art with editing, engage with comments, and enhance images with our stylish dark mode.</span> Connect with fellow artists and enthusiasts in this vibrant community. It's not just an art gallery; it's a place to collaborate and celebrate artistic expression.</Text>
             <Grid className="project-tech-stack" templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} gap={"10px"}>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"black"} w={"100%"} color={"white"}>Express JS</Button></GridItem>
                 <GridItem><Button _hover={{ color: "none" }} _active={{ color: "none" }} disabled bg={"#3cff15"} w={"100%"} >MongoDB</Button></GridItem>
