@@ -25,7 +25,7 @@ const Connect = () => {
                         bg: theme === "dark" ? "white" : "black", transform: 'scale(0.90)', borderColor: '#000000'
                     }}>Github</Button>
                 </Link>
-                <Link href='https://connect-lms01.netlify.app/' isExternal className="project-deployed-link">
+                <Link href='https://shubham-masai-connect.vercel.app/' isExternal className="project-deployed-link">
                     <Button mt={"15px"} backgroundColor="#F6FFEE" color={"black"} w={"100%"} _hover={{ colorScheme: "#F6FFEE" }} rightIcon={<ExternalLinkIcon />} border={"1px solid black"} _active={{
                         bg: '#F6FFEE', transform: 'scale(0.90)', borderColor: '#000000'
                     }}>Live Demo</Button>
