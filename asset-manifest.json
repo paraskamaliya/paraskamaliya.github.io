@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.092804f3.css",
-    "main.js": "/static/js/main.e8e20b70.js",
+    "main.css": "/static/css/main.0bd9a6a4.css",
+    "main.js": "/static/js/main.fa855cdb.js",
     "static/media/Home Page.png": "/static/media/Home Page.bd58fd95e81a4f69fdac.png",
     "static/media/Tech School Home Page.png": "/static/media/Tech School Home Page.01bc420da5292518f09b.png",
     "static/media/Paras-Kamaliya-Resume.pdf": "/static/media/Paras-Kamaliya-Resume.3b559ced5e9c4d7afaa2.pdf",
@@ -17,11 +17,11 @@
     "static/media/dark.webp": "/static/media/dark.71b5c9f08db46d24d4b7.webp",
     "static/media/light.webp": "/static/media/light.4777be2247afaffaef73.webp",
     "index.html": "/index.html",
-    "main.092804f3.css.map": "/static/css/main.092804f3.css.map",
-    "main.e8e20b70.js.map": "/static/js/main.e8e20b70.js.map"
+    "main.0bd9a6a4.css.map": "/static/css/main.0bd9a6a4.css.map",
+    "main.fa855cdb.js.map": "/static/js/main.fa855cdb.js.map"
   },
   "entrypoints": [
-    "static/css/main.092804f3.css",
-    "static/js/main.e8e20b70.js"
+    "static/css/main.0bd9a6a4.css",
+    "static/js/main.fa855cdb.js"
   ]
 }
