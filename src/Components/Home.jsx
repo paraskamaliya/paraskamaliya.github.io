@@ -10,8 +10,8 @@ const Home = () => {
             "https://drive.google.com/file/d/1NLvNhrF6kMmh9VDnCRDDsCGhFZaVEnmN/view?usp=sharing"
         );
     }
-    return <Box bg={theme === "dark" ? "#262626" : "#eaeaea"} color={theme === "dark" ? "white" : "black"} w={"100%"} id="home" >
-        <Box m={"auto"} w={"90%"} >
+    return <Box bg={theme === "dark" ? "#262626" : "#eaeaea"} color={theme === "dark" ? "white" : "black"} w={"100%"} id="home">
+        <Box m={"auto"} w={"90%"}  data-aos="fade-left">
             <Stack display={"flex"} m={"auto"} justifyContent={"center"} flexDirection={["column", "column", "row", "row", "row"]} alignItems={"center"} w={"100%"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"}>
                 <Box textAlign={"left"} padding={"1rem"} fontSize={"2rem"} m={"auto"} w={["100%", "85%", "70%", "50%", "50%"]}>
                     <Text textAlign={"left"} fontWeight={200} fontSize={["1rem", "1rem", "2rem", "2rem", "2rem"]}>Hello👋, </Text>

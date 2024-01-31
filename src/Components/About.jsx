@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const About = () => {
     const theme = useSelector(store => store.theme);
     return <Box w={"100%"} backgroundColor={theme === "dark" ? "#262626" : "#eaeaea"} color={theme === "dark" ? "white" : "black"} id="about" className="about section" >
-        <Box w={"90%"} m={"auto"} padding={"1rem"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"}>
+        <Box w={"90%"} m={"auto"} padding={"1rem"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"} data-aos="fade-right">
             <Card m={"auto"} bg={theme === "dark" ? "#2c2c2c" : "#eaeaea"} color={theme === "dark" ? "white" : "black"} border={"none"}>
                 <Heading color={"#4A90E2"} textAlign={"center"} textDecoration={"underline"} textDecorationColor={"#4A90E2"}>About Me</Heading>
                 <CardBody >

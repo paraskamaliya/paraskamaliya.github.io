@@ -26,9 +26,9 @@ import { useSelector } from "react-redux";
 const Skills = () => {
     const theme = useSelector(store => store.theme);
     return <Box w={"100%"} backgroundColor={theme === "dark" ? "#262626" : "#eaeaea"} color={theme === "dark" ? "white" : "black"} id="skills" >
-        <Box w={"90%"} m={"auto"} p={"1rem"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"}>
+        <Box w={"90%"} m={"auto"} p={"1rem"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"} >
             <Heading textAlign={"center"} textDecoration={"underline"} color={"#4A90E2"} textDecorationColor={"#4A90E2"}>Skills</Heading>
-            <Box w={"100%"} direction={"row"} justifyContent={"center"} >
+            <Box w={"100%"} direction={"row"} justifyContent={"center"} data-aos="zoom-in-up">
                 <Heading textAlign={"center"} fontSize={"3xl"} mt={5} >Tech Stacks</Heading>
 
                 <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(5,1fr)"]} fontSize={["xl", "xl", "2xl", "2xl", "2xl"]} textAlign={"center"} gap={"7"} border={theme === "dark" ? "1px solid white" : "1px solid black"} borderRadius={10} templateRows={"auto"} justifyItems={"center"} p={3} boxShadow={"lg"}>
@@ -79,7 +79,7 @@ const Skills = () => {
                 </Grid>
                 <Heading textAlign={"center"} fontSize={"3xl"} mt={10}>Other Skill</Heading>
 
-                <Box m={"auto"} textAlign={"center"} border={"1px"} borderRadius={"10"} mt={"20px"}>
+                <Box m={"auto"} textAlign={"center"} border={"1px"} borderRadius={"10"} mt={"20px"} data-aos="zoom-in-up">
                     <Heading fontSize={"3xl"} fontWeight={400} m={"auto"} mt={"7px"} mb={"5px"} w={"90%"} borderBottom={"1px"}>Mindsets</Heading>
                     <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(6,1fr)"]} m={"auto"} templateRows={"auto"} textAlign={"center"} w={"100%"} mt={"5px"} fontSize={["xl", "xl", "2xl", "2xl", "2xl"]} gap={"7"} boxShadow={"lg"} p={3}>
                         <GridItem className="skills-card" w={"100%"} m={"auto"} >
@@ -108,7 +108,7 @@ const Skills = () => {
                         </GridItem>
                     </Grid>
                 </Box>
-                <Box m={"auto"} textAlign={"center"} border={"1px"} borderRadius={"10"} mt={"50px"}>
+                <Box m={"auto"} textAlign={"center"} border={"1px"} borderRadius={"10"} mt={"50px"} data-aos="zoom-in-up">
                     <Heading fontSize={"3xl"} fontWeight={400} mb={"5px"} m={"auto"} mt={"7px"} w={"90%"} borderBottom={"1px"}>Toolsets</Heading>
                     <Grid templateColumns={["repeat(2,1fr)", "repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(6,1fr)"]} m={"auto"} textAlign={"center"} templateRows={"auto"} w={"100%"} mt={"5px"} fontSize={["xl", "xl", "2xl", "2xl", "2xl"]} gap={"7"} boxShadow={"lg"} p={3}>
                         <GridItem className="skills-card" w={"100%"} m={"auto"} >

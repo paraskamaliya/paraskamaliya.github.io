@@ -7,10 +7,10 @@ import { useSelector } from "react-redux";
 const TechSchool = () => {
     const theme = useSelector(store => store.theme)
     return <Stack display={"flex"} flexDirection={["column", "column", "row", "row", "row"]} gap={"20px"} padding={"20px"} alignContent={"center"} alignItems={"center"} className="project-card" boxShadow={"lg"} borderRadius={"15px"} m={2}>
-        <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"}>
+        <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"} data-aos="fade-right" data-aos-duration="1500">
             <Image src={homePage} border={"1px solid black"} cursor={"pointer"} alt="techschool" />
         </Box>
-        <Box w={["100%", "100%", "50%", "50%", "50%"]}>
+        <Box w={["100%", "100%", "50%", "50%", "50%"]} data-aos="fade-left" data-aos-duration="1500">
             <Heading fontSize={"5xl"} className="project-title">Tech School</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description" >Tech School is my inaugural web development project, a basic website designed to showcase my foundational skills in web development. As a <span style={{ color: "#4A90E2" }}>beginner</span> in the world of coding and web design, I embarked on this project with a clear objective: to create a simple yet <span style={{ color: "#4A90E2" }}>informative website</span>.</Text>
             <Grid templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(3,1fr)"]} templateRows={"auto"} gap={"10px"} className="project-tech-stack" >

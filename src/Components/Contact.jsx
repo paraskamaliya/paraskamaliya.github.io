@@ -20,7 +20,7 @@ const Contact = () => {
             });
     };
     return <Box w={"100%"} backgroundColor={theme === "dark" ? "#262626" : "#eaeaea"} color={theme === "dark" ? "white" : "black"} id="contact">
-        <Box w={"90%"} m={"auto"} p={"1rem"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"}>
+        <Box w={"90%"} m={"auto"} p={"1rem"} borderBottom={"1px"} borderBottomColor={theme === "dark" ? "white" : "black"} data-aos="zoom-in-up">
             <Heading textAlign={"center"} textDecoration={"underline"} color={"#4A90E2"} textDecorationColor={"#4A90E2"} mb={"20px"}>Contact Me</Heading>
             <Text textAlign={"center"}>Please fill out the form below to discuss any work opportunities.</Text>
             <Box w={["100%", "100%", "60%", "60%", "60%"]} m={"auto"} textAlign={"center"}>

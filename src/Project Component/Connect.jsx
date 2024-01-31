@@ -7,10 +7,10 @@ import { useSelector } from "react-redux";
 const Connect = () => {
     const theme = useSelector(store => store.theme)
     return <Stack display={"flex"} flexDirection={["column", "column", "row", "row", "row"]} gap={"20px"} padding={"20px"} alignContent={"center"} alignItems={"center"} className="project-card" boxShadow={"lg"} borderRadius={"15px"} m={2}>
-        <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"}>
+        <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"} data-aos="fade-right" data-aos-duration="1500">
             <Image src={homePage} border={"1px solid black"} cursor={"pointer"} alt="connect" />
         </Box>
-        <Box w={["100%", "100%", "50%", "50%", "50%"]}>
+        <Box w={["100%", "100%", "50%", "50%", "50%"]} data-aos="fade-left" data-aos-duration="1500">
             <Heading fontSize={"5xl"} className="project-title">Connect</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description" >Step into the future of efficient management with 'Connect' - a Collaborative project. This dynamic website unites <span style={{ color: "#4A90E2" }}>students, managers, and administrators</span>, empowering them with tailored interfaces for seamless collaboration. Immerse yourself in a sleek, user-friendly environment with the added charm of a customizable <span style={{ color: "#4A90E2" }}>dark mode</span>. Engage in vibrant <span style={{ color: "#4A90E2" }}>discussions</span> and stay informed with the <span style={{ color: "#4A90E2" }}>latest announcements</span>. 'Connect' - where functionality meets elegance, making management an absolute pleasure.</Text>
             <Grid templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(4,1fr)"]} templateRows={"auto"} gap={"10px"} className="project-tech-stack" >

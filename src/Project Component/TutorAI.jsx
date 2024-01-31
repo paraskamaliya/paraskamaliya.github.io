@@ -6,11 +6,11 @@ import { useSelector } from "react-redux";
 
 const TutorAI = () => {
     const theme = useSelector(store => store.theme)
-    return <Stack display={"flex"} flexDirection={["column", "column", "row", "row", "row"]} gap={"20px"} padding={"20px"} alignContent={"center"} alignItems={"center"} className="project-card" boxShadow={"lg"} borderRadius={"15px"} m={2}>
-        <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"}>
+    return <Stack display={"flex"} flexDirection={["column", "column", "row", "row", "row"]} gap={"20px"} padding={"20px"} alignContent={"center"} alignItems={"center"} className="project-card" boxShadow={"lg"} borderRadius={"15px"} m={2} >
+        <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"} data-aos="fade-right" data-aos-duration="1500">
             <Image src={homePage} border={"1px solid black"} cursor={"pointer"} alt="eplant" />
         </Box>
-        <Box w={["100%", "100%", "50%", "50%", "50%"]}>
+        <Box w={["100%", "100%", "50%", "50%", "50%"]} data-aos="fade-left" data-aos-duration="1500">
             <Heading fontSize={"5xl"} className="project-title">Tutor AI</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description">Tutor-AI a Collaborative project, our cutting-edge platform, uses AI and advanced language processing to simulate <span style={{ color: "#4A90E2" }}>real interview scenarios</span>. Users gain valuable feedback to identify strengths and areas for improvement in their interview skills. It's an innovative <span style={{ color: "#4A90E2" }}>self-interview preparation tool</span> powered by artificial intelligence.</Text>
             <Grid className="project-tech-stack" templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} gap={"10px"}>

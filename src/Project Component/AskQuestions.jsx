@@ -7,10 +7,10 @@ import { useSelector } from "react-redux";
 const AskQuestions = () => {
     const theme = useSelector(store => store.theme)
     return <Stack display={"flex"} flexDirection={["column", "column", "row", "row", "row"]} gap={"20px"} padding={"20px"} alignContent={"center"} alignItems={"center"} className="project-card" boxShadow={"lg"} borderRadius={"15px"} m={2}>
-        <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"}>
+        <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"} data-aos="fade-right" data-aos-duration="1500">
             <Image src={homePage} border={"1px solid black"} cursor={"pointer"} alt="eplant" />
         </Box>
-        <Box w={["100%", "100%", "50%", "50%", "50%"]}>
+        <Box w={["100%", "100%", "50%", "50%", "50%"]} data-aos="fade-left" data-aos-duration="1500">
             <Heading fontSize={"5xl"} className="project-title">AskQuestions</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description">Explore AskQuestions, a dynamic knowledge hub for diverse <span style={{ color: "#4A90E2" }}>Q&A</span>. Engage with a <span style={{ color: "#4A90E2" }} >user-friendly platform</span> and join a vibrant community to unravel mysteries together. Dive into a world of knowledge — join AskQuestions now!</Text>
             <Grid className="project-tech-stack" templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} gap={"10px"}>

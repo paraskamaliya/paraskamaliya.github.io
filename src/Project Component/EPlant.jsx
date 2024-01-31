@@ -7,10 +7,10 @@ import { useSelector } from "react-redux";
 const EPlant = () => {
     const theme = useSelector(store => store.theme)
     return <Stack display={"flex"} flexDirection={["column", "column", "row", "row", "row"]} gap={"20px"} padding={"20px"} alignContent={"center"} alignItems={"center"} className="project-card" boxShadow={"lg"} borderRadius={"15px"} m={2}>
-        <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"}>
+        <Box w={["100%", "100%", "50%", "50%", "50%"]} justifyContent={"center"} justifyItems={"center"} data-aos="fade-right" data-aos-duration="1500">
             <Image src={homePage} border={"1px solid black"} cursor={"pointer"} alt="eplant" />
         </Box>
-        <Box w={["100%", "100%", "50%", "50%", "50%"]}>
+        <Box w={["100%", "100%", "50%", "50%", "50%"]} data-aos="fade-left" data-aos-duration="1500">
             <Heading fontSize={"5xl"} className="project-title">E-Plant</Heading>
             <Text mt={"15px"} mb={"15px"} className="project-description">E-Plant is an innovative e-commerce platform dedicated to the beauty of nature, offering a wide variety of plants. With both <span style={{ color: "#4A90E2" }}>user and admin interfaces</span>, it seamlessly blends functionality with an <span style={{ color: "#4A90E2" }}>appealing UI</span>. Explore the world of greenery while keeping track of your <span style={{ color: "#4A90E2" }}>recent visits</span> to your favorite plants.</Text>
             <Grid className="project-tech-stack" templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(3,1fr)", "repeat(4,1fr)", "repeat(5,1fr)"]} gap={"10px"}>
