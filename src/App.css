@@ -15,3 +15,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+::selection {
+    color: #4A90E2;
+}
