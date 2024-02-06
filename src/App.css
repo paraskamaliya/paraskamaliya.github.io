@@ -17,5 +17,6 @@
 }
 
 ::selection {
-    color: #4A90E2;
+    color: black;
+    background-color: #4A90E2;
 }
