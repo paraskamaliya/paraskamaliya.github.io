@@ -1,6 +1,6 @@
 import homePage from "../Project Photo/BookMySeat/Homepage.png"
 import { BsGithub } from "react-icons/bs";
-import { Box, Button, Grid, GridItem, HStack, Heading, Image, Link, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, Heading, Image, Link, Stack, Text } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons"
 import { useSelector } from "react-redux";
 

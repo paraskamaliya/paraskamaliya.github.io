@@ -1,7 +1,6 @@
 import { Box, Heading, Image, Stack } from "@chakra-ui/react"
 import EPlant from "../Project Component/EPlant";
 import Connect from "../Project Component/Connect";
-import PaintKu from "../Project Component/PaintKu";
 import { useSelector } from "react-redux";
 import TechSchool from "../Project Component/TechSchool";
 import ArtSphere from "../Project Component/ArtSphere";
@@ -34,7 +33,7 @@ const Projects = () => {
                     <Image id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=paraskamaliya&theme=transparent" alt="GitHub Streak" style={{ maxWidth: "100%" }} border={"1px solid black"} />
                 </Stack>
                 <Box w={"100%"} m={"auto"} className="react-activity-calendar" mt={"5px"} >
-                    <Image src="https://ghchart.rshah.org/006AFF/paraskamaliya" alt="Github Contribution" w={"55%"} p={"1.5"} m={"auto"} border={theme == "dark" ? "1px solid white" : "1px solid black"} />
+                    <Image src="https://ghchart.rshah.org/006AFF/paraskamaliya" alt="Github Contribution" w={"55%"} p={"1.5"} m={"auto"} border={theme === "dark" ? "1px solid white" : "1px solid black"} />
                 </Box>
             </Box>
         </Box>
