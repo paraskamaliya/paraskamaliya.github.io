@@ -7,6 +7,7 @@ import TechSchool from "../Project Component/TechSchool";
 import ArtSphere from "../Project Component/ArtSphere";
 import TutorAI from "../Project Component/TutorAI";
 import AskQuestions from "../Project Component/AskQuestions";
+import BookMySeat from "../Project Component/BookMySeat";
 
 const Projects = () => {
     const theme = useSelector(store => store.theme);
@@ -19,6 +20,7 @@ const Projects = () => {
                 <ArtSphere />
                 <EPlant />
                 <Connect />
+                <BookMySeat />
                 {/* <PaintKu /> */}
                 <TechSchool />
             </Box>
